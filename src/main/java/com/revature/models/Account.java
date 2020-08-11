@@ -81,4 +81,11 @@ public class Account {
 	public void setApproved(Boolean approved) {
 		this.approved = approved;
 	}
+	@Override
+	public String toString() {
+		return "Account [id=" + id + ", accountNumber=" + accountNumber + ", bankInfo=" + bankInfo + ", accountType="
+				+ accountType + ", accountBalance=" + accountBalance + ", createdDateTime=" + createdDateTime
+				+ ", updatedDateTime=" + updatedDateTime + ", approved=" + approved + "]";
+	}
+	
 }

@@ -71,4 +71,11 @@ public class Employee {
 	public void setEmployeeStatus(String employeeStatus) {
 		this.employeeStatus = employeeStatus;
 	}
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", firstName=" + firstName + ", middleName=" + middleName + ", lastName="
+				+ lastName + ", userName=" + userName + ", password=" + password + ", employeeStatus=" + employeeStatus
+				+ "]";
+	}
+	
 }

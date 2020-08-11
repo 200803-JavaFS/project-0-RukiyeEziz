@@ -52,4 +52,10 @@ public class BankInfo {
 	public void setBranchAddress(Address branchAddress) {
 		this.branchAddress = branchAddress;
 	}
+	@Override
+	public String toString() {
+		return "BankInfo [id=" + id + ", branchName=" + branchName + ", branchCode=" + branchCode + ", routingNumber="
+				+ routingNumber + ", branchAddress=" + branchAddress + "]";
+	}
+	
 }

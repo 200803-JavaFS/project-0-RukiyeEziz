@@ -62,4 +62,11 @@ public class Transaction {
 	public void setTxnAmount(Double txnAmount) {
 		this.txnAmount = txnAmount;
 	}
+	@Override
+	public String toString() {
+		return "Transaction [id=" + id + ", fromAccountNumber=" + fromAccountNumber + ", toAccountNumber="
+				+ toAccountNumber + ", txnDateTime=" + txnDateTime + ", txnType=" + txnType + ", txnAmount=" + txnAmount
+				+ "]";
+	}
+	
 }
