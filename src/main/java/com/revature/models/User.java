@@ -60,11 +60,25 @@ public class User {
 	public void setUserType(String userType) {
 		this.userType = userType;
 	}
+	
+	public boolean isLogInAccount() {
+		return logInAccount;
+	}
+
+	public void setLogInAccount(boolean logInAccount) {
+		this.logInAccount = logInAccount;
+	}
 
 	@Override
 	public String toString() {
-		return "User [userName = " + userName + ", password = " + password + "]";
+		return "User [userName = " + userName + ", password = " 
+				+ password + ", userType = " + userType + ", logInAccount = "
+				+ logInAccount + ", createAccount = " + createAccount + "]";
 	}
+	
+	
+
+	
 
 	
 	
