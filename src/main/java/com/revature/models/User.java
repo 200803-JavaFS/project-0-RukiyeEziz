@@ -6,11 +6,24 @@ public class User {
 	private String userName;	
 	private String password;
 	private String userType; // client, employee, admin
-	private boolean logInAccount = false;;
+	private boolean logInAccount = false;
 	private boolean createAccount = false;
 	
+	// BankingApplication.java <-- User.java --> UserDAO.java
 	public User() {
 		super();
+	}
+	
+	public User(int i, String name, String pw, String type, boolean logIn, boolean create) {
+		super();
+		this.userId = i;
+		this.userName = name;
+		this.password = pw;
+		this.userType = type;
+		this.logInAccount = logIn;
+		this.createAccount = create;
+		
+		
 	}
 	
 //	public User(String userName, String pw) {
@@ -19,14 +32,20 @@ public class User {
 //		setPassword(pw);
 //	}
 //
-//	public User(String userName, String pw, int id) {
+//	public User( int id, String userName, String pw) {
 //		this(userName, pw);
 //		setUserId(id);		
 //	}
-	
+//	
 //	public User(String userName, String pw, int id, String userType) {
-//		this(userName, pw, id);
+//		this(userName, pw);
 //		setUserType(userType);		
+//	}
+//	public User(String userName, String pw, int id, String userType, boolean logIn, boolean create) {
+//		this(userName, pw);
+//		this.isLogInAccount();
+//		this.isCreateAccount();
+//		
 //	}
 	
 	public String getUserName() {
@@ -69,6 +88,14 @@ public class User {
 		this.logInAccount = logInAccount;
 	}
 
+	public boolean isCreateAccount() {
+		return createAccount;
+	}
+
+	public void setCreateAccount(boolean createAccount) {
+		this.createAccount = createAccount;
+	}
+	
 	@Override
 	public String toString() {
 		return "User [userName = " + userName + ", password = " 

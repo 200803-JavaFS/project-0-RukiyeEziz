@@ -1,0 +1,114 @@
+2020-08-12 17:54:56 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 17:55:03 INFO  BankingApplication:177 - User = ww logged into account.User [userName = ww, password = ww, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 17:55:03 INFO  UserService:16 - account id = 1
+2020-08-12 17:55:03 INFO  UserDAO:21 - id = 1
+2020-08-12 17:55:03 INFO  BankingApplication:205 - User [userName = ruki, password = rrrr, userType = null, logInAccount = false, createAccount = false]
+2020-08-12 17:55:03 INFO  BankingApplication:49 - === The banking application ends ===
+2020-08-12 21:55:10 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 21:55:29 INFO  BankingApplication:177 - User = ruki logged into account.User [userName = ruki, password = 333, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 21:55:29 INFO  UserService:16 - account id = 1
+2020-08-12 21:55:29 INFO  UserDAO:21 - id = 1
+2020-08-12 21:55:29 INFO  BankingApplication:205 - User [userName = ruki, password = ruki, userType = null, logInAccount = false, createAccount = false]
+2020-08-12 21:55:29 INFO  BankingApplication:49 - === The banking application ends ===
+2020-08-12 22:33:28 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 22:33:34 INFO  BankingApplication:177 - User = ee logged into account.User [userName = ee, password = ww, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 22:33:34 INFO  UserService:16 - account id = 1
+2020-08-12 22:33:34 INFO  UserDAO:30 - id = 1
+2020-08-12 22:36:47 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 22:36:52 INFO  BankingApplication:177 - User = www logged into account.User [userName = www, password = 222, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 22:36:52 INFO  UserService:16 - account id = 1
+2020-08-12 22:36:52 INFO  UserDAO:30 - id = 1
+2020-08-12 22:36:52 INFO  BankingApplication:212 - User [userName = ruki, password = ruki, userType = null, logInAccount = false, createAccount = false]
+2020-08-12 22:36:52 INFO  BankingApplication:49 - === The banking application ends ===
+2020-08-12 23:16:15 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:16:19 INFO  BankingApplication:177 - User = 22 logged into account.User [userName = 22, password = ww, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:16:19 INFO  UserService:16 - account id = 1
+2020-08-12 23:16:19 INFO  UserDAO:32 - id = 1
+2020-08-12 23:16:19 INFO  BankingApplication:212 - User [userName = ruki, password = ruki, userType = null, logInAccount = false, createAccount = false]
+2020-08-12 23:16:19 INFO  BankingApplication:49 - === The banking application ends ===
+2020-08-12 23:21:20 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:21:23 INFO  BankingApplication:177 - User = ww logged into account.User [userName = ww, password = ww, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:21:23 INFO  UserService:16 - account id = 1
+2020-08-12 23:21:23 INFO  UserDAO:38 - id = 1
+2020-08-12 23:24:13 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:24:16 INFO  BankingApplication:177 - User = ww logged into account.User [userName = ww, password = ww, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:24:16 INFO  UserService:20 - account id = 0
+2020-08-12 23:24:16 INFO  UserDAO:38 - id = 0
+2020-08-12 23:25:58 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:26:02 INFO  BankingApplication:177 - User = ww logged into account.User [userName = ww, password = ww, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:26:02 INFO  UserService:20 - account id = 0
+2020-08-12 23:26:02 INFO  UserDAO:38 - id = 0
+2020-08-12 23:27:26 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:27:29 INFO  BankingApplication:177 - User = ww logged into account.User [userName = ww, password = ww, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:27:29 INFO  UserService:20 - account id = 0
+2020-08-12 23:27:29 INFO  UserDAO:39 - id = 0
+2020-08-12 23:28:28 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:28:32 INFO  BankingApplication:177 - User = ww logged into account.User [userName = ww, password = ww, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:28:32 INFO  UserService:20 - account id = 0
+2020-08-12 23:28:32 INFO  UserDAO:39 - id = 0
+2020-08-12 23:28:32 INFO  BankingApplication:216 - User [userName = aki, password = aki, userType = null, logInAccount = false, createAccount = false]
+2020-08-12 23:28:32 INFO  BankingApplication:49 - === The banking application ends ===
+2020-08-12 23:38:41 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:39:01 INFO  BankingApplication:177 - User = jj logged into account.User [userName = jj, password = jj, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:39:01 INFO  UserService:20 - account id = 0
+2020-08-12 23:39:01 INFO  UserDAO:40 - id = 0
+2020-08-12 23:39:37 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:39:43 INFO  BankingApplication:177 - User = jj logged into account.User [userName = jj, password = jj, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:39:43 INFO  UserService:20 - account id = 0
+2020-08-12 23:39:43 INFO  UserDAO:40 - id = 0
+2020-08-12 23:39:43 INFO  BankingApplication:220 - User [userName = aki, password = aki, userType = null, logInAccount = false, createAccount = false]
+2020-08-12 23:39:43 INFO  BankingApplication:49 - === The banking application ends ===
+2020-08-12 23:40:19 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:40:24 INFO  BankingApplication:177 - User = jj logged into account.User [userName = jj, password = jj, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:40:24 INFO  UserService:20 - account id = 3
+2020-08-12 23:40:24 INFO  UserDAO:40 - id = 3
+2020-08-12 23:40:42 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:40:47 INFO  BankingApplication:177 - User = jj logged into account.User [userName = jj, password = jj, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:40:47 INFO  UserService:20 - account id = 2
+2020-08-12 23:40:47 INFO  UserDAO:40 - id = 2
+2020-08-12 23:42:36 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:42:43 INFO  BankingApplication:177 - User = jj logged into account.User [userName = jj, password = jj, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:42:43 INFO  UserService:20 - account id = 2
+2020-08-12 23:42:43 INFO  UserDAO:42 - id = 2
+2020-08-12 23:42:43 INFO  BankingApplication:220 - null
+2020-08-12 23:42:43 INFO  BankingApplication:49 - === The banking application ends ===
+2020-08-12 23:43:32 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:43:38 INFO  BankingApplication:177 - User = jj logged into account.User [userName = jj, password = jj, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:43:38 INFO  UserService:20 - account id = 2
+2020-08-12 23:43:38 INFO  UserDAO:42 - id = 2
+2020-08-12 23:43:38 INFO  BankingApplication:220 - null
+2020-08-12 23:43:38 INFO  BankingApplication:49 - === The banking application ends ===
+2020-08-12 23:49:16 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:49:21 INFO  BankingApplication:177 - User = jj logged into account.User [userName = jj, password = jj, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:50:45 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:50:50 INFO  BankingApplication:177 - User = j logged into account.User [userName = j, password = jj, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:50:50 INFO  UserService:20 - account id = 2
+2020-08-12 23:50:50 INFO  UserDAO:47 - id = 2
+2020-08-12 23:58:15 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:58:21 INFO  BankingApplication:177 - User = jj logged into account.User [userName = jj, password = jj, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:58:21 INFO  UserService:20 - account id = 2
+2020-08-12 23:58:21 INFO  UserDAO:47 - id = 2
+2020-08-12 23:58:42 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:58:49 INFO  BankingApplication:177 - User = jj logged into account.User [userName = jj, password = jj, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:58:49 INFO  UserService:20 - account id = 1
+2020-08-12 23:58:49 INFO  UserDAO:47 - id = 1
+2020-08-12 23:58:49 INFO  BankingApplication:222 - User [userName = ruki, password = ruki, userType = null, logInAccount = false, createAccount = false]
+2020-08-12 23:58:49 INFO  BankingApplication:49 - === The banking application ends ===
+2020-08-12 23:59:24 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-12 23:59:29 INFO  BankingApplication:177 - User = jj logged into account.User [userName = jj, password = jj, userType = Client, logInAccount = true, createAccount = false]
+2020-08-12 23:59:29 INFO  UserService:20 - account id = 1
+2020-08-12 23:59:29 INFO  UserDAO:47 - id = 1
+2020-08-12 23:59:29 INFO  BankingApplication:218 - User [userName = ruki, password = ruki, userType = null, logInAccount = false, createAccount = false]
+2020-08-12 23:59:29 INFO  BankingApplication:49 - === The banking application ends ===
+2020-08-13 00:12:33 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-13 00:12:39 INFO  BankingApplication:177 - User = jj logged into account.User [userName = jj, password = jj, userType = Client, logInAccount = true, createAccount = false]
+2020-08-13 00:12:39 INFO  UserService:17 - account id = 1
+2020-08-13 00:12:39 INFO  UserDAO:24 - id = 1
+2020-08-13 00:12:39 INFO  BankingApplication:218 - User [userName = ruki, password = ruki, userType = Employee, logInAccount = true, createAccount = false]
+2020-08-13 00:12:39 INFO  BankingApplication:49 - === The banking application ends ===
+2020-08-13 00:13:03 INFO  BankingApplication:34 - === The banking application has started ===
+2020-08-13 00:13:07 INFO  BankingApplication:177 - User = jj logged into account.User [userName = jj, password = jj, userType = Client, logInAccount = true, createAccount = false]
+2020-08-13 00:13:07 INFO  UserService:17 - account id = 1
+2020-08-13 00:13:07 INFO  UserDAO:24 - id = 1
+2020-08-13 00:13:07 INFO  BankingApplication:218 - User [userName = ruki, password = ruki, userType = Employee, logInAccount = true, createAccount = false]
+2020-08-13 00:13:07 INFO  BankingApplication:49 - === The banking application ends ===
