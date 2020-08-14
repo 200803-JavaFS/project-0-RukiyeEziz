@@ -1,51 +1,30 @@
 package com.revature.models;
 
-public class User {
+import java.io.Serializable;
 
+public class User implements Serializable{
+	private static final long serialVersionUID = 1L;
 	private int userId;
 	private String userName;	
 	private String password;
 	private String userType; // client, employee, admin
+	
 	private boolean logInAccount = false;
 	private boolean createAccount = false;
 	
-	// BankingApplication.java <-- User.java --> UserDAO.java
 	public User() {
-		super();
+		super();		
 	}
 	
-	public User(int i, String name, String pw, 
-			String type, boolean logIn, boolean create) {
-		super();
-		this.userId = i;
-		this.userName = name;
-		this.password = pw;
-		this.userType = type;
-		this.logInAccount = logIn;
-		this.createAccount = create;
-		
-		
-	}
-	
-//	public User(String userName, String pw) {
+//	public User(int i, String name, String pw, 
+//			String type, boolean logIn, boolean create) {
 //		super();
-//		setUserName(userName);
-//		setPassword(pw);
-//	}
-//
-//	public User( int id, String userName, String pw) {
-//		this(userName, pw);
-//		setUserId(id);		
-//	}
-//	
-//	public User(String userName, String pw, int id, String userType) {
-//		this(userName, pw);
-//		setUserType(userType);		
-//	}
-//	public User(String userName, String pw, int id, String userType, boolean logIn, boolean create) {
-//		this(userName, pw);
-//		this.isLogInAccount();
-//		this.isCreateAccount();
+//		this.userId = i;
+//		this.userName = name;
+//		this.password = pw;
+//		this.userType = type;
+//		this.logInAccount = logIn;
+//		this.createAccount = create;
 //		
 //	}
 	
@@ -98,17 +77,57 @@ public class User {
 	}
 	
 	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (createAccount ? 1231 : 1237);
+		result = prime * result + (logInAccount ? 1231 : 1237);
+		result = prime * result + ((password == null) ? 0 : password.hashCode());
+		result = prime * result + userId;
+		result = prime * result + ((userName == null) ? 0 : userName.hashCode());
+		result = prime * result + ((userType == null) ? 0 : userType.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		User other = (User) obj;
+		if (createAccount != other.createAccount)
+			return false;
+		if (logInAccount != other.logInAccount)
+			return false;
+		if (password == null) {
+			if (other.password != null)
+				return false;
+		} else if (!password.equals(other.password))
+			return false;
+		if (userId != other.userId)
+			return false;
+		if (userName == null) {
+			if (other.userName != null)
+				return false;
+		} else if (!userName.equals(other.userName))
+			return false;
+		if (userType == null) {
+			if (other.userType != null)
+				return false;
+		} else if (!userType.equals(other.userType))
+			return false;
+		return true;
+	}
+
+	@Override
 	public String toString() {
 		return "User [userName = " + userName + ", password = " 
 				+ password + ", userType = " + userType + ", logInAccount = "
 				+ logInAccount + ", createAccount = " + createAccount + "]";
 	}
-	
-	
-
-	
-
-	
 	
 	
 }

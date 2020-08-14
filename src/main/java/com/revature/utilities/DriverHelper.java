@@ -1,37 +1,234 @@
-package com.revature;
+package com.revature.utilities;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-import com.revature.comtroller.LogInController;
 import com.revature.models.User;
-/*
- * Author: Rukiye Eziz
- * Project: #0
- * Due Date: 08/19/2020 Wednesday
- * Description: Leveraging Java 8, create an application 
- * that simulates simple banking transactions
- */
 import com.revature.services.UserService;
 
-// ---> User.java
-public class BankingApplication {
 
-	private static final Logger log = LogManager.getLogger(BankingApplication.class);
+
+public class DriverHelper {
+	
+	private static Scanner scan = new Scanner(System.in);
+	private static boolean logIn = false;
+	private static boolean create = false;
+	private static String userType;
+	private static UserService userService = new UserService();
+	
+	public void beginApp() {
+		
+		System.out.println("**************************************************************");
+		System.out.printf("\033[32m%s\033[0m%n%n", "WELCOME TO UNIVERSITY OF MARS CREDIT UNION");
+		
+		// Display log in or create account options
+		System.out.println("Select one of the options and press 'enter':\n\n"
+							+ "[1]\t Log into existing account\n"
+							+ "[2]\t Create a new account\n"
+							+ "[3]\t Close the application\n");
+		System.out.println("**************************************************************\n");
+
+		String option = scan.nextLine();
+		logInOrCreateOption(option);
+	}
+	
+	// Get user's option for log in or create an account
+	private void logInOrCreateOption(String option) {
+		
+		System.out.println();
+		switch (option) {
+		case "1":
+			logInAccount();
+			break;
+		case "2":
+			createAccount();
+			break;
+		case "3":
+			System.out.println("Thank you for choosing business with University of Mars Credit Union.");
+			break;
+		default:
+			System.out.println("Invalid option. Please select one of the following options:\n");
+			beginApp();	
+			break;
+		}// end of switch
+
+	}
+	
+	// Display and select one of the user type options after logged 
+	private static void logInAccount() {
+		System.out.println("WELCOME BACK\n"
+						+ "Select one of the user type and press 'enter':\n\n"
+						+ "[1]\t Client Account\n"
+						+ "[2]\t Employee Account\n"
+						+ "[3]\t Admin Account\n"
+						+ "[4]\t Close the Application");
+		System.out.println("\n**************************************************************\n");
+		String option = scan.nextLine();
+		System.out.println();
+		logIn = true;
+
+		switch (option) {
+
+		case "1":
+			userType = "Client";
+			logInUser(userType, logIn);
+			break;
+		case "2":
+			userType = "Employee";
+			logInUser(userType, logIn);
+			break;
+		case "3":
+			userType = "Admin";
+			logInUser(userType, logIn);
+			break;
+		case "4":
+			System.out.println("Thank you for choosing business with University of Mars Credit Union.");
+			System.exit(0);
+			break;
+		default:
+			System.out.println("Invalid option. Please select one of the following options:");
+			System.out.println("\n**************************************************************\n");
+			logInAccount();
+			break;		
+		}// end of switch		
+	}
+	// Display and select one of the user type options after created
+	private static void createAccount() {
+		System.out.println("WELCOME\n"
+				+ "Select one of the user type and press 'enter':\n"
+				+ "[1]\t Client Account"
+				+ "[2]\t Employee Account"
+				+ "[3]\t Admin Account"
+				+ "[4]\t Close the Application");
+		System.out.println("\n**************************************************************\n");
+		String option = scan.next();
+		System.out.println();
+		create = true;
+
+		switch (option) {
+
+			case "1":
+				userType = "Client";
+				createUser(userType, create);
+				break;
+			case "2":
+				userType = "Employee";
+				createUser(userType, create);
+				break;
+			case "3":
+				userType = "Admin";
+				createUser(userType, create);
+				break;
+			case "4":
+				System.out.println("Thank you for choosing business with University of Mars Credit Union.");
+				System.exit(0);
+				break;
+			default:
+				System.out.println("Invalid option. Please select one of the following options.");
+				System.out.println("\n**************************************************************\n");
+				createAccount();
+				break;
+		}// end of switch
+	}		
+	// request info from existing user
+	private static void logInUser(String usertype, boolean login) {
+		
+		// this is just for testing
+		List<User> userAllList = userService.findAll();
+		System.out.println("All user in DB:");
+		for(User u : userAllList) {
+			System.out.println(u);
+		}
+		
+//		System.out.println("Enter your user name and password:\n");
+//		System.out.print("User Name: ");
+//		String userName = scan.next();
+//		
+//		System.out.println(userName);
+//		
+//		System.out.print("Password: ");
+//		String password = scan.next();		
+//		userType = usertype;		
+//		logIn = login;
+		
+		
+		
+//		user.setLogInAccount(logIn);
+//		System.out.println(user.toString());
+//		System.out.println("\n**************************************************************\n");
+//		//log.info("User = " + userName + " logged into account." + user.toString());
+//
+//
+//		System.out.println("this is from console entry");
+//		System.out.println("console user name " + user.getUserName());
+//		System.out.println("console user pw " + user.getPassword());
+////		userService.getUser(user.getUserName(), user.getPassword());
+////		
+//		User user = userService.findUserById(1);	
+//		System.out.println("whooo user 1 all info " + user);
+//		System.out.println("whooo user 1 name " + user.getUserName());
+//		System.out.println("whooo user 1 pw " + user.getPassword());
+//		
+//		
+//		
+//		
+//		//log.info(user);
+
+
+	}
+	// request info from new user
+	private static void createUser(String usertype, boolean created) {
+//		System.out.println("Enter your user name and password:\n");
+//		System.out.print("User Name: ");
+//		String userName = scan.next();
+//		user.setUserName(userName);
+//		System.out.print("Password: ");
+//		String password1 = scan.next();
+//		System.out.println("Re-Enter Password: ");
+//		String password2 = scan.next();
+//		
+//		if(password1.equals(password2)) {
+//			user.setPassword(password1);
+//		}
+//		else {
+//			System.out.println("The credentials you provided cannot be determined to be authentic.");
+//			System.out.println("\n**************************************************************\n");
+//			createUser(usertype, created);
+//			
+//		}
+//		
+//		userType = usertype;
+//		user.setUserType(userType);
+//		create = created;
+//		user.setCreateAccount(create);
+//		//f("\033[32m%n%s\033[0m%n%n",
+//		System.out.println(user.toString());
+//		System.out.println("\n**************************************************************\n");
+		// System.out.println(user.getUserName());
+		//log.info("User = " + userName + " created an account." + user.toString());
+
+	}
+	
+	
+}
+
+
+/*
+public class DriverHelper {
+	
+
+	//private static final Logger log = LogManager.getLogger(BankingApplication.class);
 	public static String welcome = "WELCOME TO UNIVERSITY OF MARS CREDIT UNION";
 	static Scanner scan = new Scanner(System.in);
 	static boolean logIn = false;
 	static boolean create = false;
 	static String userType;
 	static User user = new User();
-	static LogInController logInController = new LogInController();
-	
+	static LogInController logInController = new LogInController();	
 	private static UserService userService = new UserService();
 
-	public static void logInOrCreateAccountOption() {
-		log.info("=== The banking application has started ===");
+	public void beginApp() {
+		//log.info("=== The banking application has started ===");
 		System.out.println("Executing  BankingApplication.java ......");
 		System.out.println("**************************************************************");
 		System.out.printf("\033[32m%s\033[0m%n%n", welcome);
@@ -46,11 +243,11 @@ public class BankingApplication {
 		// Get user's option for log in or create an account
 		execute();
 		scan.close();
-		log.info("=== The banking application ends ===");
+		//log.info("=== The banking application ends ===");
 	}
 
 	// Get user's option for log in or create an account
-	public static void execute() {
+	public void execute() {
 		String option = scan.next();
 		System.out.println();
 
@@ -67,7 +264,7 @@ public class BankingApplication {
 			break;
 		default:
 			System.out.println("Invalid option. Please select one of the following options:\n");
-			logInOrCreateAccountOption();	
+			beginApp();	
 		}// end of switch
 
 	}
@@ -174,7 +371,7 @@ public class BankingApplication {
 		user.setLogInAccount(logIn);
 		System.out.println(user.toString());
 		System.out.println("\n**************************************************************\n");
-		log.info("User = " + userName + " logged into account." + user.toString());
+		//log.info("User = " + userName + " logged into account." + user.toString());
 
 		// do while later ask for re enter correct user name //////////////////// to do
 		// list
@@ -215,7 +412,7 @@ public class BankingApplication {
 		
 		
 		
-		log.info(user);
+		//log.info(user);
 //		User user2 = userService.findUserByName(1);
 //		System.out.println("whooo user 1 name pw " + user2);
 //		System.out.println(user2.getUserName());
@@ -252,13 +449,13 @@ public class BankingApplication {
 		System.out.println(user.toString());
 		System.out.println("\n**************************************************************\n");
 		// System.out.println(user.getUserName());
-		log.info("User = " + userName + " created an account." + user.toString());
+		//log.info("User = " + userName + " created an account." + user.toString());
 
 	}
 
 	// check if the user valid or not
 
-}
+}*/
 
 //
 //public void selectUserType() {	

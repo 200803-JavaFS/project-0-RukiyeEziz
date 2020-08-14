@@ -7,19 +7,14 @@ package com.revature;
  * that simulates simple banking transactions
  */
 
+import com.revature.utilities.DriverHelper;
+
 public class BankingApplicationDriver {
 	
 	
 	public static void main(String[] args) {
-	
-		System.out.println("Starting BankingApplicationDriver.java ......");
-		
-		// calling helper function BankingApplication.java
-		BankingApplication bankApp = new BankingApplication();
-		
-		bankApp.logInOrCreateAccountOption();
-		//bankApp.selectUserType();
-		
+		DriverHelper bankApp = new DriverHelper();
+		bankApp.beginApp();
 	}
 
 }
