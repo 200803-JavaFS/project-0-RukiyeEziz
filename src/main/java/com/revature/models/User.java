@@ -14,7 +14,8 @@ public class User {
 		super();
 	}
 	
-	public User(int i, String name, String pw, String type, boolean logIn, boolean create) {
+	public User(int i, String name, String pw, 
+			String type, boolean logIn, boolean create) {
 		super();
 		this.userId = i;
 		this.userName = name;
