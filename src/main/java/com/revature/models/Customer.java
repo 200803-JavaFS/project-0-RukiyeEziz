@@ -186,12 +186,7 @@ public class Customer {
 	public String toString() {
 		return "Customer [customerId=" + customerId + ", firstName=" + firstName + ", middleName=" + middleName
 				+ ", lastName=" + lastName + ", userName=" + userName + ", address=" + address + ", city=" + city
-				+ ", state=" + state + ", zip=" + zip + ", phoneNumber=" + phoneNumber + ", getCustomerId()="
-				+ getCustomerId() + ", getFirstName()=" + getFirstName() + ", getMiddleName()=" + getMiddleName()
-				+ ", getLastName()=" + getLastName() + ", getUserName()=" + getUserName() + ", getAddress()="
-				+ getAddress() + ", getCity()=" + getCity() + ", getState()=" + getState() + ", getZip()=" + getZip()
-				+ ", getPhoneNumber()=" + getPhoneNumber() + ", hashCode()=" + hashCode() + ", getClass()=" + getClass()
-				+ ", toString()=" + super.toString() + "]";
+				+ ", state=" + state + ", zip=" + zip + ", phoneNumber=" + phoneNumber + " ]";
 	}
 	
 	

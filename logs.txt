@@ -19,3 +19,9 @@
 2020-08-15 02:34:22 INFO  UserService:24 - UserServicefin user by name: ruki
 2020-08-15 02:34:51 INFO  UserService:34 - User Service insertUser User [userName = rukitry1, password = ruki, userType = client]
 2020-08-15 02:34:51 INFO  UserDAO:122 - UserDAO user info: User [userName = rukitry1, password = ruki, userType = client]
+2020-08-15 03:32:39 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 03:32:40 INFO  UserDAO:97 - UserDAO user info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 03:58:54 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 03:58:55 INFO  UserDAO:97 - UserDAO user info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 04:01:49 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 04:01:50 INFO  UserDAO:97 - UserDAO user info: User [userName = ruki, password = ruki, userType = client]

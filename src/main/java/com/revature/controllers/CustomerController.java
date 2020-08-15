@@ -2,7 +2,12 @@ package com.revature.controllers;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.Scanner;
+
+import com.revature.daos.CustomerDAO;
+import com.revature.models.Customer;
+import com.revature.services.CustomerService;
 
 
 
@@ -11,6 +16,9 @@ public class CustomerController {
 	private static String userType = "client";
 	private static DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); 
 	private static Scanner scan = new Scanner(System.in);
+	
+	private CustomerDAO cdao = new CustomerDAO();
+	private CustomerService cs = new CustomerService();
 	
 	public void customerTasks(String userName) {
 		LocalDateTime currentTime = LocalDateTime.now();
@@ -31,10 +39,11 @@ public class CustomerController {
 				manageAccount(userName);
 				break;
 			case "2":
-				editPersonalInfo();
+				createNewAccount(userName);
+				
 				break;
 			case "3":
-				createNewAccount();
+				editPersonalInfo();
 				break;
 			case "4":
 				System.out.println("Thank you for choosing business with University of Mars Credit Union.");
@@ -43,25 +52,33 @@ public class CustomerController {
 			default:
 				System.out.println("Invalid option. Please select one of the following options:");
 				System.out.println("\n**************************************************************\n");
-				
+				customerTasks(userName);
 				break;		
 		}// end of switch
 		
 	}
 	private void manageAccount(String userName) {
 		System.out.println("manage account");
+		System.out.println("Your Account(s): ");
+		
 		
 	}
-
+	private void createNewAccount(String Name) {
+		System.out.println("Your Personal Information: ");
+		List<Customer> list = cs.findAll();
+		
+		for(Customer c : list) {
+			System.out.println(c);
+		}
+		
+		
+	}
 	private void editPersonalInfo() {
 		// TODO Auto-generated method stub
 		
 	}
 	
-	private void createNewAccount() {
-		// TODO Auto-generated method stub
-		
-	}
+
 
 
 } // end of controller
