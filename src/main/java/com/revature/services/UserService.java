@@ -21,7 +21,7 @@ public class UserService {
 	}
 	
 	public User findUserByName(String name) {	
-		log.info("UserService gets user name from driver: " + name);
+		log.info("UserServicefin user by name: " + name);
 		return userDao.findByName(name);
 	}
 	

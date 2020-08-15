@@ -64,7 +64,8 @@ public class UserDAO implements IUserDAO {
 				user.setUserName(result.getString("user_name"));
 				user.setPassword(result.getString("user_pw"));
 				user.setUserType(result.getString("user_type"));
-				System.out.println("UserDAO found user info: " + user);	
+				System.out.println("UserDAO find by name user: " + user);	
+				return user;
 			}	
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

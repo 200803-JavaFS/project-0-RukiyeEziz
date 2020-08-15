@@ -173,7 +173,7 @@ public class DriverHelper {
 		*/
 		
 		User userNameDB = userService.findUserByNameByPW(userName, userPassword);
-		//System.out.println(userNameDB.getUserName() + " " + userNameDB.getPassword());
+		System.out.println(userNameDB.getUserName() + " " + userNameDB.getPassword());
 		//System.out.println("driver " + userNameDB);
 		if(userNameDB != null && userNameDB.getUserName() .equals(userName) && userNameDB.getPassword().equals(userPassword)) {		
 			System.out.println("Welcome " + userName + ". You have succefully logged in.");	
@@ -195,7 +195,7 @@ public class DriverHelper {
 			}		
 		}
 		else {
-			System.out.println("\nuser name and password do not match with DB. Try again! \n");
+			System.out.println("\nUser name and password do not match with DB. Try again! \n");
 			logInUser(userType, logIn);
 		}
 		
@@ -211,6 +211,16 @@ public class DriverHelper {
 		System.out.println("Enter your user name and password:\n");
 		System.out.print("User Name: ");
 		String userName = scan.next();		////// TO DO: userName restriction
+		
+		User userNameDB = userService.findUserByName(userName);
+		System.out.println(userNameDB.getUserName());
+		if(userNameDB.getUserName() != null ) {
+			System.out.println("Similar user name already exist in the DB. Try other name.");
+			System.out.println("Enter your user name and password:\n");
+			System.out.print("User Name: ");
+			userName = scan.next();
+		}
+		
 		boolean pwChk = true;
 		String userPassword1;
 		String userPassword2;
