@@ -27,7 +27,7 @@ public class UserService {
 	
 	public User findUserByNameByPW(String name, String pw) {	
 		log.info("UserService looking for user name and pw ... " + name);
-		return userDao.findByNamePW(name, pw);
+		return userDao.findByNameByPW(name, pw);
 	}
 	
 	public boolean insertUser(User u) {

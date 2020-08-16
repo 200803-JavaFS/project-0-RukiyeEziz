@@ -12,9 +12,9 @@ public class Account implements Serializable{
 	private String accountName;
 	private String accountType;
 	private double accountBalance;
-	private String status; // approved, denied, pending
+	private String status; 			// approved, denied, pending
 	private int customerId;
-	private String internalMemo; // this is for internally used by employee and admin
+	private String internalMemo; 	// this is for internally used by employee and admin
 	private Date createdDateTime;
 	
 	public Account() {

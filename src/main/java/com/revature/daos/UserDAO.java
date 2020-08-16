@@ -17,7 +17,6 @@ import com.revature.utilities.ConnectionUtility;
 
 public class UserDAO implements IUserDAO {
 	private static final Logger log = LogManager.getLogger(UserDAO.class);
-	//private static int index = 0;
 	
 	@Override
 	public List<User> findAll() {
@@ -91,9 +90,8 @@ public class UserDAO implements IUserDAO {
 		log.info("UserDAO could not find user name from DB.");
 		return null;
 	}
-	
 	@Override
-	public User findByNamePW(String name, String pw) {
+	public User findByNameByPW(String name, String pw) {
 		try(Connection conn = ConnectionUtility.getConnection()){
 			
 			String sql = "SELECT * FROM users WHERE user_name = ? and user_pw = ?;";
@@ -129,7 +127,7 @@ public class UserDAO implements IUserDAO {
 
 	
 	@Override
-	public boolean addUser(User u) {
+	public boolean addUser(User user) {
 		try(Connection conn = ConnectionUtility.getConnection()){
 			String sql = "INSERT INTO users (user_name, user_pw, user_type) "
 					+ "VALUES (?, ?, ?);";
@@ -137,12 +135,12 @@ public class UserDAO implements IUserDAO {
 			
 			int index = 0;
 			//statement.setInt(++index, u.getUserId()); // id is auto incremented for users table
-			statement.setString(++index, u.getUserName());
-			statement.setString(++index, u.getPassword());
-			statement.setString(++index, u.getUserType());
+			statement.setString(++index, user.getUserName());
+			statement.setString(++index, user.getPassword());
+			statement.setString(++index, user.getUserType());
 			
 			statement.execute();
-			log.info("UserDAO successfully added new user to DB: " + u);
+			log.info("UserDAO successfully added new user to DB: " + user);
 			return true;
 				
 		} catch (SQLException e) {
@@ -154,35 +152,4 @@ public class UserDAO implements IUserDAO {
 	}
 
 	
-	
-
 }
-
-	
-
-//while (result.next()) {
-//// Mapping the result from the query into UserInformation POJO
-//return mapUser(result);
-//}
-/*
-ResultSet result = statement.executeQuery(sql);
-//ResultSet result = statement.executeQuery(sql);
-//int index = 0;
-//statement.getString(++index, x);
-log.info(name);
-
-if(result.next()) {
-User user = new User();
-user.setUserName(result.getString("user_name"));
-user.setPassword(result.getString("user_pw"));
-user.setUserType(result.getString("user_type"));
-System.out.println("UserDAO found user info: " + user);
-//if(user != null) {
-//	user.setUserName(result.getString("user_name"));
-//}
-
-return user;
-}	
-else {
-return null;
-}*/

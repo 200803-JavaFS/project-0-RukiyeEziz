@@ -1,0 +1,30 @@
+package com.revature.services;
+
+import java.util.List;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.revature.daos.AccountDAO;
+import com.revature.daos.IAccountDAO;
+import com.revature.models.Account;
+
+
+public class AccountService {
+	private static final Logger log = LogManager.getLogger(UserService.class);
+	private static IAccountDAO accountDao = new AccountDAO();
+	
+	public List<Account> findAll(){
+		return accountDao.findAll();
+	}
+	
+	public List<Account> findAccountByCustomerId(int id) {
+		log.info("AccountService looking for account by customer id ... " + id);
+		return accountDao.findById(id);
+	}
+
+	public Account findAccountByIds(int customerid, long accountid) {
+		log.info("AccountService looking for an account by customer id ... " + customerid + " and account id " + accountid );
+		return accountDao.findByIds(customerid, accountid);
+	}
+}

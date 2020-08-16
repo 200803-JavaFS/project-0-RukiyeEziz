@@ -29,21 +29,15 @@ public class UserServiceHelper {
 	   * true if valid user name and password, 
 	   * false if invalid
 	   */
-	  public boolean validateUserName(final String username){
-
-		  matcher = namePattern.matcher(username);
-		  
-		  return matcher.matches();
-
-	  }
-
-	  public boolean validatePassword(final String pw){
-
-		  matcher = pwPattern.matcher(pw);
-		  
-		  return matcher.matches();
-
-	  }
+	public boolean validateUserName(final String username){	
+		matcher = namePattern.matcher(username);		  
+		return matcher.matches();	
+	}
+	
+	public boolean validatePassword(final String pw){	
+		matcher = pwPattern.matcher(pw);		  
+		return matcher.matches();	
+	}
 	
 	
 

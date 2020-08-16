@@ -12,12 +12,10 @@ import com.revature.services.CustomerService;
 // customer manage their account, create a new account, edit personal info
 public class CustomerController {
 	
-	private static DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); 
-	private static Scanner scan = new Scanner(System.in);
-	
 	private static AccountController accountController = new AccountController();
 	private CustomerService customerService = new CustomerService();
-	
+	private static DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); 
+	private static Scanner scan = new Scanner(System.in);
 	public void customerTasks(String username) {
 		//
 		Customer c = customerService.findCustomerByName(username);

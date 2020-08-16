@@ -10,9 +10,9 @@ public interface IUserDAO {
 
 	public User findByName(String name);
 
-	public User findByNamePW(String name, String pw);
+	public User findByNameByPW(String name, String pw);
 	
-	public boolean addUser(User u);
+	public boolean addUser(User user);
 	
 	
 	

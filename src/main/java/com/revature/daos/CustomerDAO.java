@@ -17,6 +17,7 @@ import com.revature.utilities.ConnectionUtility;
 
 public class CustomerDAO implements ICustomerDAO {
 	private static final Logger log = LogManager.getLogger(UserService.class);
+	
 	@Override
 	public List<Customer> findAll() {
 		try(Connection conn = ConnectionUtility.getConnection()){
