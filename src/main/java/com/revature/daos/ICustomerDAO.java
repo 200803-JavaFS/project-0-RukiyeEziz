@@ -16,6 +16,8 @@ public interface ICustomerDAO {
 	public boolean updateAddress(ArrayList<String> list, int id);
 	
 	public boolean updatePhone(int phone, int id);
+	
+	
 
 
 }

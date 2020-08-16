@@ -1,91 +1,183 @@
 package com.revature.models;
 
+import java.io.Serializable;
 import java.util.Date;
-import java.util.UUID;
 
-public class Account {
+public class Account implements Serializable{	
+	private static final long serialVersionUID = 1L;	
 	
-	private UUID id;	
-	private Long accountNumber;
-	private BankInfo bankInfo;
+	// account_id, account_name, account_type, balance, 
+	// status, customer_id_fk, internal_memo, created_date_time
+	private Long accountId;
+	private String accountName;
 	private String accountType;
-	private Double accountBalance;
+	private double accountBalance;
+	private String status; // approved, denied, pending
+	private int customerId;
+	private String internalMemo; // this is for internally used by employee and admin
 	private Date createdDateTime;
-	private Date updatedDateTime;
-	private Boolean approved;
 	
-	public Account(UUID id, 
-					Long accountNumber,
-					BankInfo bankInfo, 
-					String accountType, 
-					Double accountBalance,
-					Date createdDateTime,
-					Date updatedDateTime,
-					Boolean approved) 
-	{
+	public Account() {
 		super();
-		this.id = id;
-		this.accountNumber = accountNumber;
-		this.bankInfo = bankInfo;
+		// TODO Auto-generated constructor stub
+	}
+
+	public Account(
+			Long accountId, 
+			String accountName, 
+			String accountType, 
+			double accountBalance, 
+			String status,
+			int customerId, 
+			String internalMemo, 
+			Date createdDateTime) {
+		super();
+		this.accountId = accountId;
+		this.accountName = accountName;
 		this.accountType = accountType;
 		this.accountBalance = accountBalance;
+		this.status = status;
+		this.customerId = customerId;
+		this.internalMemo = internalMemo;
 		this.createdDateTime = createdDateTime;
-		this.updatedDateTime = updatedDateTime;
-		this.approved = approved;
 	}
-	public UUID getId() {
-		return id;
-	}	
-	public Long getAccountNumber() {
-		return accountNumber;
+
+	public Long getAccountId() {
+		return accountId;
 	}
-	public void setAccountNumber(Long accountNumber) {
-		this.accountNumber = accountNumber;
+
+	public void setAccountId(Long accountId) {
+		this.accountId = accountId;
 	}
-	public void setId(UUID id) {
-		this.id = id;
+
+	public String getAccountName() {
+		return accountName;
 	}
-	public BankInfo getBankInfo() {
-		return bankInfo;
+
+	public void setAccountName(String accountName) {
+		this.accountName = accountName;
 	}
-	public void setBankInfo(BankInfo bankInfo) {
-		this.bankInfo = bankInfo;
-	}
+
 	public String getAccountType() {
 		return accountType;
 	}
+
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
-	public Double getAccountBalance() {
+
+	public double getAccountBalance() {
 		return accountBalance;
 	}
-	public void setAccountBalance(Double accountBalance) {
+
+	public void setAccountBalance(double accountBalance) {
 		this.accountBalance = accountBalance;
 	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public int getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+
+	public String getInternalMemo() {
+		return internalMemo;
+	}
+
+	public void setInternalMemo(String internalMemo) {
+		this.internalMemo = internalMemo;
+	}
+
 	public Date getCreatedDateTime() {
 		return createdDateTime;
 	}
+
 	public void setCreatedDateTime(Date createdDateTime) {
 		this.createdDateTime = createdDateTime;
-	}	
-	public Date getUpdatedDateTime() {
-		return updatedDateTime;
 	}
-	public void setUpdatedDateTime(Date updatedDateTime) {
-		this.updatedDateTime = updatedDateTime;
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		long temp;
+		temp = Double.doubleToLongBits(accountBalance);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		result = prime * result + ((accountId == null) ? 0 : accountId.hashCode());
+		result = prime * result + ((accountName == null) ? 0 : accountName.hashCode());
+		result = prime * result + ((accountType == null) ? 0 : accountType.hashCode());
+		result = prime * result + ((createdDateTime == null) ? 0 : createdDateTime.hashCode());
+		result = prime * result + customerId;
+		result = prime * result + ((internalMemo == null) ? 0 : internalMemo.hashCode());
+		result = prime * result + ((status == null) ? 0 : status.hashCode());
+		return result;
 	}
-	public Boolean getApproved() {
-		return approved;
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Account other = (Account) obj;
+		if (Double.doubleToLongBits(accountBalance) != Double.doubleToLongBits(other.accountBalance))
+			return false;
+		if (accountId == null) {
+			if (other.accountId != null)
+				return false;
+		} else if (!accountId.equals(other.accountId))
+			return false;
+		if (accountName == null) {
+			if (other.accountName != null)
+				return false;
+		} else if (!accountName.equals(other.accountName))
+			return false;
+		if (accountType == null) {
+			if (other.accountType != null)
+				return false;
+		} else if (!accountType.equals(other.accountType))
+			return false;
+		if (createdDateTime == null) {
+			if (other.createdDateTime != null)
+				return false;
+		} else if (!createdDateTime.equals(other.createdDateTime))
+			return false;
+		if (customerId != other.customerId)
+			return false;
+		if (internalMemo == null) {
+			if (other.internalMemo != null)
+				return false;
+		} else if (!internalMemo.equals(other.internalMemo))
+			return false;
+		if (status == null) {
+			if (other.status != null)
+				return false;
+		} else if (!status.equals(other.status))
+			return false;
+		return true;
 	}
-	public void setApproved(Boolean approved) {
-		this.approved = approved;
-	}
+
 	@Override
 	public String toString() {
-		return "Account [id=" + id + ", accountNumber=" + accountNumber + ", bankInfo=" + bankInfo + ", accountType="
-				+ accountType + ", accountBalance=" + accountBalance + ", createdDateTime=" + createdDateTime
-				+ ", updatedDateTime=" + updatedDateTime + ", approved=" + approved + "]";
+		return "Account [accountId=" + accountId + ", accountName=" + accountName + ", accountType=" + accountType
+				+ ", accountBalance=" + accountBalance + ", status=" + status + ", customerId=" + customerId
+				+ ", internalMemo=" + internalMemo + ", createdDateTime=" + createdDateTime + "]";
 	}
 	
+	
+	
+	
+
 }

@@ -1,5 +1,5 @@
 package com.revature.controllers;
 
-public class AdminController {
+public class TransactionController {
 
 }

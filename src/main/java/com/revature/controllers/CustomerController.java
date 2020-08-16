@@ -3,10 +3,8 @@ package com.revature.controllers;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
-import com.revature.daos.CustomerDAO;
 import com.revature.models.Customer;
 import com.revature.services.CustomerService;
 
@@ -14,23 +12,22 @@ import com.revature.services.CustomerService;
 // customer manage their account, create a new account, edit personal info
 public class CustomerController {
 	
-	private static String userType = "client";
 	private static DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); 
 	private static Scanner scan = new Scanner(System.in);
 	
-	private CustomerDAO cdao = new CustomerDAO();
+	private static AccountController accountController = new AccountController();
 	private CustomerService customerService = new CustomerService();
 	
 	public void customerTasks(String username) {
 		//
 		Customer c = customerService.findCustomerByName(username);
 		
-		int customerID = 0;
+		int customerId = 0;
 
 		if(c.getUserName() != null ) {
 			System.out.println("Your customer ID user name: " + c.getUserName());
 			System.out.println("Your customer ID: " + c.getCustomerId() );
-			customerID = c.getCustomerId();
+			customerId = c.getCustomerId();
 		}
 		
 		// this is get then set bkz customer want to edit info
@@ -46,7 +43,7 @@ public class CustomerController {
 		System.out.println("Login time: " + timeFormatter.format(currentTime));
 		System.out.println("\nWhat would you like to do? Select one of options and press 'enter':\n\n"
 				+ "[1]\t Manage existing account\n"
-				+ "[2]\t Apply for a new account\n"
+				+ "[2]\t Apply for a new account\n"  // customer should apply joit account
 				+ "[3]\t Edit your personal information\n"
 				+ "[4]\t Close the Application");
 		
@@ -57,14 +54,14 @@ public class CustomerController {
 		switch (option) {
 
 			case "1":
-				manageAccount(customerID);     ////////////// account related
+				accountController.manageAccount(customerId);   ////////////// account related
 				break;
 			case "2":
-				createNewAccount(customerID);   //////////////account related
+				createNewAccount(customerId);   //////////////account related
 				
 				break;
 			case "3":
-				editPersonalInfo(customerID);
+				editPersonalInfo(customerId);
 				break;
 			case "4":
 				System.out.println("Thank you for choosing business with University of Mars Credit Union.");
@@ -79,17 +76,14 @@ public class CustomerController {
 		
 	}
 	
-	private void manageAccount(int id) {
-		System.out.println("manage account");
-		System.out.println("Your Account(s): ");
-		
-		
-	}
+
 	private void createNewAccount(int id) {
 		System.out.println("create a new account");
 		
 	}
 	private void editPersonalInfo(int id) {
+		////////////////////////////////////////////////////// To DO: this is return boolean. 
+		           ///////////        if possible return to result, ask one more time if updated info is o with cusomer
 		
 		Customer c = customerService.findCustomerById(id);
 		

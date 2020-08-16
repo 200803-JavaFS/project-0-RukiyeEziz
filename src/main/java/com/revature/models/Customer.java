@@ -1,10 +1,10 @@
 package com.revature.models;
 
-import java.util.Date;
-import java.util.UUID;
+import java.io.Serializable;
 
-public class Customer {
+public class Customer implements Serializable{
 	private static final long serialVersionUID = 1L;
+	
 	//(customer_id, first_name, middle_name, last_name, 
 	// address, city, state, zip, phone_number, user_name_fk)
 	private int customerId;

@@ -17,7 +17,7 @@ public class CustomerService {
 	public List<Customer> findAll() {		
 		return customerDao.findAll();
 	}
-	
+
 	public Customer findCustomerByName(String username) {
 		log.info("CustomerService looking for customer by user name ... " + username);
 		log.info("Customer logged in and about to do tasks.");
@@ -25,8 +25,7 @@ public class CustomerService {
 	}
 
 	public Customer findCustomerById(int id) {
-		log.info("CustomerService looking for customer by id ...: " + id);
-		
+		log.info("CustomerService looking for customer by id ...: " + id);	
 		return customerDao.findById(id);
 	}
 

@@ -336,3 +336,32 @@
 2020-08-15 19:56:35 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
 2020-08-15 19:56:42 INFO  UserService:220 - CustomerDAO successfully updated customer personal info on DB: 
 2020-08-15 19:56:42 INFO  UserService:45 - CustomerService successfully updated customer information.
+2020-08-15 20:31:31 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 20:31:31 INFO  UserService:29 - UserService looking for user name and pw ... akid
+2020-08-15 20:31:31 INFO  UserDAO:126 - UserDAO could not find user name and pw from DB.
+2020-08-15 20:31:53 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 20:31:53 INFO  UserService:29 - UserService looking for user name and pw ... akidobie
+2020-08-15 20:31:53 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 3, userName = akidobie, password = akidobie, userType = client]
+2020-08-15 20:31:53 INFO  UserService:22 - CustomerService looking for customer by user name ... akidobie
+2020-08-15 20:31:53 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 20:31:53 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=2, firstName=Aki, middleName=Mocha, lastName=Delight, userName=akidobie, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 20:33:39 INFO  UserService:28 - CustomerService looking for customer by id ...: 2
+2020-08-15 20:33:39 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=2, firstName=Aki, middleName=Mocha, lastName=Delight, userName=akidobie, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 20:34:26 INFO  UserService:199 - CustomerDAO successfully updated customer personal info on DB: 
+2020-08-15 20:34:26 INFO  UserService:36 - CustomerService successfully updated customer information.
+2020-08-15 23:36:20 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 23:36:20 INFO  UserService:29 - UserService looking for user name and pw ... akidobie
+2020-08-15 23:36:20 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 3, userName = akidobie, password = akidobie, userType = client]
+2020-08-15 23:36:20 INFO  UserService:22 - CustomerService looking for customer by user name ... akidobie
+2020-08-15 23:36:20 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 23:36:21 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=2, firstName=Aki, middleName=Mocha, lastName=Delight, userName=akidobie, address=9876 poiu, city=poiu, state=poiu, zip=987, phoneNumber=12345678 ]
+2020-08-15 23:36:24 INFO  UserService:28 - CustomerService looking for customer by id ...: 2
+2020-08-15 23:36:24 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=2, firstName=Aki, middleName=Mocha, lastName=Delight, userName=akidobie, address=9876 poiu, city=poiu, state=poiu, zip=987, phoneNumber=12345678 ]
+2020-08-15 23:37:21 INFO  UserService:199 - CustomerDAO successfully updated customer personal info on DB: 
+2020-08-15 23:37:21 INFO  UserService:35 - CustomerService successfully updated customer information.
+2020-08-15 23:41:44 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 23:41:44 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 23:41:45 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 23:41:45 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 23:41:45 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 23:41:45 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]

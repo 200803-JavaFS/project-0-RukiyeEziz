@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.revature.controllers.CustomerController;
+
 import com.revature.models.User;
 import com.revature.services.UserService;
 
@@ -17,7 +18,6 @@ public class DriverHelper {
 	private static Scanner scan = new Scanner(System.in);
 	private static boolean logIn = false;
 	private static boolean create = false;
-	private static String actionType; 	// log in account, create account
 	private static String userType;		// client, employee, admin
 	
     
@@ -77,8 +77,7 @@ public class DriverHelper {
 		System.out.println("option "+option);
 		System.out.println();
 		logIn = true;
-		actionType = "logged in";
-
+		
 		switch (option) {
 
 		case "1":
