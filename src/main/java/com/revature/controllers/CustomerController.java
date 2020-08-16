@@ -2,6 +2,7 @@ package com.revature.controllers;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -10,7 +11,7 @@ import com.revature.models.Customer;
 import com.revature.services.CustomerService;
 
 
-
+// customer manage their account, create a new account, edit personal info
 public class CustomerController {
 	
 	private static String userType = "client";
@@ -18,12 +19,32 @@ public class CustomerController {
 	private static Scanner scan = new Scanner(System.in);
 	
 	private CustomerDAO cdao = new CustomerDAO();
-	private CustomerService cs = new CustomerService();
+	private CustomerService customerService = new CustomerService();
 	
-	public void customerTasks(String userName) {
+	public void customerTasks(String username) {
+		//
+		Customer c = customerService.findCustomerByName(username);
+		
+		int customerID = 0;
+
+		if(c.getUserName() != null ) {
+			System.out.println("Your customer ID user name: " + c.getUserName());
+			System.out.println("Your customer ID: " + c.getCustomerId() );
+			customerID = c.getCustomerId();
+		}
+		
+		// this is get then set bkz customer want to edit info
+//		Customer c = customerService.findCustomerById(1);
+//		System.out.println("Your customer ID: " + c.getCustomerId());
+//
+//		if(c.getCustomerId() != 0 ) {
+//			System.out.println("Your customer ID: " + c.getCustomerId() );
+//			customerID = c.getCustomerId();
+//		}
+		
 		LocalDateTime currentTime = LocalDateTime.now();
 		System.out.println("Login time: " + timeFormatter.format(currentTime));
-		System.out.println("Select one of options and press 'enter':\n\n"
+		System.out.println("\nWhat would you like to do? Select one of options and press 'enter':\n\n"
 				+ "[1]\t Manage existing account\n"
 				+ "[2]\t Apply for a new account\n"
 				+ "[3]\t Edit your personal information\n"
@@ -36,14 +57,14 @@ public class CustomerController {
 		switch (option) {
 
 			case "1":
-				manageAccount(userName);
+				manageAccount(customerID);     ////////////// account related
 				break;
 			case "2":
-				createNewAccount(userName);
+				createNewAccount(customerID);   //////////////account related
 				
 				break;
 			case "3":
-				editPersonalInfo();
+				editPersonalInfo(customerID);
 				break;
 			case "4":
 				System.out.println("Thank you for choosing business with University of Mars Credit Union.");
@@ -52,29 +73,94 @@ public class CustomerController {
 			default:
 				System.out.println("Invalid option. Please select one of the following options:");
 				System.out.println("\n**************************************************************\n");
-				customerTasks(userName);
+				customerTasks(username);
 				break;		
 		}// end of switch
 		
 	}
-	private void manageAccount(String userName) {
+	
+	private void manageAccount(int id) {
 		System.out.println("manage account");
 		System.out.println("Your Account(s): ");
 		
 		
 	}
-	private void createNewAccount(String Name) {
-		System.out.println("Your Personal Information: ");
-		List<Customer> list = cs.findAll();
-		
-		for(Customer c : list) {
-			System.out.println(c);
-		}
-		
+	private void createNewAccount(int id) {
+		System.out.println("create a new account");
 		
 	}
-	private void editPersonalInfo() {
-		// TODO Auto-generated method stub
+	private void editPersonalInfo(int id) {
+		
+		Customer c = customerService.findCustomerById(id);
+		
+		if(c != null) {
+			System.out.println("\nYour Personal Information: ");
+			System.out.println(c);
+		}
+		System.out.println("\nNOTE: You only can edit adrress and phone number.");
+		System.out.println("\nWhat would you like to edit? Type one of options and press 'enter':\n\n"
+				+ "Edit [Address]: \n"
+				+ "Edit [Phone]: \n"
+				+ "[Exit] Application: \n");
+		String option = scan.next();
+		option.toLowerCase();
+		ArrayList<String> info = new ArrayList<>();
+		scan = new Scanner(System.in);
+		
+		switch (option) {
+			case "address":
+				System.out.print("Enter Address: ");
+				String address = scan.nextLine();
+				info.add(address);
+				
+				System.out.println();
+				System.out.print("Enter City: ");
+				String city = scan.nextLine();
+				info.add(city);
+				
+				System.out.println();
+				System.out.print("Enter State: ");
+				String state = scan.nextLine();
+				info.add(state);
+				
+				System.out.println();
+				System.out.print("Enter valid zip: ");
+				int zip = scan.nextInt();   ///////////////// to do check if integer is valid intteger
+				
+				info.add(Integer.toString(zip));
+				System.out.println("\nYou entered: " + info + "\n");
+				
+				if(customerService.updateAddress(info, id)) {
+					System.out.println("Your information successfully updated.");
+					
+				}else {
+					System.out.println("Something went wrong please try again");
+					editPersonalInfo(id);					
+				}							
+				break;
+			case "phone":
+				System.out.print("Enter Address: ");
+				int phone = scan.nextInt();
+				System.out.println("\nYou entered: " + phone + "\n");
+				if(customerService.updatePhone(phone, id)) {
+					System.out.println("Your information successfully updated.");
+					
+				}else {
+					System.out.println("Something went wrong please try again");
+					editPersonalInfo(id);				
+				}
+								
+				break;
+			case "exit":
+				System.out.println("Thank you. See you next time.\n");
+				break;
+			default:
+				System.out.println("Invalid option. Please select one of the following options:");
+				System.out.println("\n**************************************************************\n");
+				editPersonalInfo(id);
+				break;		
+		}// end of switch
+
 		
 	}
 	

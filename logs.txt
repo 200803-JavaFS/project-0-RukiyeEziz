@@ -25,3 +25,314 @@
 2020-08-15 03:58:55 INFO  UserDAO:97 - UserDAO user info: User [userName = ruki, password = ruki, userType = client]
 2020-08-15 04:01:49 INFO  UserService:29 - UserService gets user info from driver: ruki
 2020-08-15 04:01:50 INFO  UserDAO:97 - UserDAO user info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 12:21:29 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 12:21:30 INFO  UserDAO:97 - UserDAO user info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 12:47:53 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 12:47:54 INFO  UserDAO:97 - UserDAO user info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 12:47:54 INFO  UserService:21 - CustomerService  find customer by user name: ruki
+2020-08-15 12:58:04 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 12:58:05 INFO  UserDAO:97 - UserDAO user info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 12:58:05 INFO  UserService:21 - CustomerService  find customer by user name: ruki
+2020-08-15 12:58:57 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 12:58:58 INFO  UserDAO:97 - UserDAO user info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 12:58:58 INFO  UserService:21 - CustomerService  find customer by user name: ruki
+2020-08-15 12:58:58 INFO  UserService:84 - CustomerDAO customer info: Customer [customerId=0, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 13:05:49 INFO  UserService:29 - UserService gets user info from driver: aki
+2020-08-15 13:08:19 INFO  UserService:29 - UserService gets user info from driver: aki
+2020-08-15 13:11:34 INFO  UserService:29 - UserService gets user info from driver: aki
+2020-08-15 13:11:48 INFO  UserService:29 - UserService gets user info from driver: akidobie
+2020-08-15 13:11:48 INFO  UserDAO:97 - UserDAO user info: User [userName = akidobie, password = akidobie, userType = client]
+2020-08-15 13:11:48 INFO  UserService:21 - CustomerService  find customer by user name: akidobie
+2020-08-15 13:11:49 INFO  UserService:84 - CustomerDAO customer info: Customer [customerId=0, firstName=Aki, middleName=Mocha, lastName=Delight, userName=akidobie, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 13:31:26 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 13:31:27 INFO  UserDAO:97 - UserDAO user info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 13:31:27 INFO  UserService:26 - CustomerService  find customer by user name: 1
+2020-08-15 13:31:27 INFO  UserService:76 - CustomerDAO customer info: Customer [customerId=1, firstName=ruki, middleName=Rukiye, lastName=Nafis, userName=Eziz, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 13:35:34 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 13:35:35 INFO  UserDAO:97 - UserDAO user info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 13:35:35 INFO  UserService:21 - CustomerService  find customer by user name: ruki
+2020-08-15 13:35:35 INFO  UserService:122 - CustomerDAO customer info: Customer [customerId=1, firstName=ruki, middleName=Rukiye, lastName=Nafis, userName=Eziz, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 13:50:10 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 13:50:10 INFO  UserDAO:109 - UserDAO user and pw info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 13:50:10 INFO  UserService:21 - CustomerService  find customer by user name: ruki
+2020-08-15 13:50:10 INFO  UserService:124 - CustomerDAO customer info: Customer [customerId=1, firstName=ruki, middleName=Rukiye, lastName=Nafis, userName=Eziz, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 13:57:12 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 13:57:12 INFO  UserDAO:109 - UserDAO user and pw info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 13:57:12 INFO  UserService:21 - CustomerService  find customer by user name: ruki
+2020-08-15 13:57:12 INFO  UserService:124 - CustomerDAO customer info: Customer [customerId=0, firstName=ruki, middleName=Rukiye, lastName=Nafis, userName=Eziz, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 14:05:26 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 14:05:26 INFO  UserDAO:109 - UserDAO user and pw info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 14:05:26 INFO  UserService:21 - CustomerService  find customer by user name: ruki
+2020-08-15 14:05:26 INFO  UserService:124 - CustomerDAO customer info: Customer [customerId=0, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 14:08:02 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 14:08:02 INFO  UserDAO:109 - UserDAO user and pw info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 14:08:02 INFO  UserService:21 - CustomerService  find customer by user name: ruki
+2020-08-15 14:08:02 INFO  UserService:124 - CustomerDAO customer info: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 14:12:11 INFO  UserService:29 - UserService gets user info from driver: ruki
+2020-08-15 14:12:11 INFO  UserDAO:109 - UserDAO user and pw info: User [userName = ruki, password = ruki, userType = client]
+2020-08-15 14:12:11 INFO  UserService:21 - CustomerService  find customer by user name: ruki
+2020-08-15 14:12:12 INFO  UserService:125 - CustomerDAO customer info: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 14:29:53 INFO  UserService:24 - UserService find user by user name: nefis
+2020-08-15 14:33:45 INFO  UserService:24 - UserService find user by user name: nefis
+2020-08-15 14:35:37 INFO  UserService:24 - UserService find user by user name: nefis
+2020-08-15 14:35:50 INFO  UserService:34 - User Service insertUser User [userName = nefis, password = nefis, userType = employee]
+2020-08-15 14:35:50 INFO  UserDAO:134 - UserDAO user info: User [userName = nefis, password = nefis, userType = employee]
+2020-08-15 14:36:20 INFO  UserService:29 - UserService gets user info from driver: nefis
+2020-08-15 14:36:20 INFO  UserDAO:109 - UserDAO user and pw info: User [userName = nefis, password = nefis, userType = employee]
+2020-08-15 14:45:20 INFO  UserService:29 - UserService gets user info from driver: nafis
+2020-08-15 14:45:54 INFO  UserService:24 - UserService find user by user name: nefis
+2020-08-15 14:46:15 INFO  UserService:34 - User Service insertUser User [userName = nefis, password = nefis, userType = employee]
+2020-08-15 14:49:13 INFO  UserService:24 - UserService find user by user name: nefis
+2020-08-15 14:49:25 INFO  UserService:34 - User Service insertUser User [userName = nefis, password = nefis, userType = employee]
+2020-08-15 14:51:28 INFO  UserService:24 - UserService find user by user name: nefis
+2020-08-15 14:51:49 INFO  UserService:34 - User Service insertUser User [userName = nefis, password = nefis, userType = employee]
+2020-08-15 14:52:06 INFO  UserService:24 - UserService find user by user name: nefis
+2020-08-15 14:52:55 INFO  UserService:34 - User Service insertUser User [userName = nefis, password = nefis, userType = employee]
+2020-08-15 15:05:25 INFO  UserService:24 - UserService looking for user name ... nefis
+2020-08-15 15:05:26 INFO  UserDAO:85 - UserDAO could not find user name from DB.
+2020-08-15 15:05:41 INFO  UserService:34 - User Service trying to insert user to DB ... User [userName = nefis, password = nefis, userType = employee]
+2020-08-15 15:05:41 INFO  UserDAO:138 - UserDAO successfully added new user to DB: User [userName = nefis, password = nefis, userType = employee]
+2020-08-15 15:06:13 INFO  UserDAO:42 - UserDAO successfully found all users from DB.
+2020-08-15 15:06:13 INFO  UserService:29 - UserService looking for user name and pw ... nefis
+2020-08-15 15:06:13 INFO  UserDAO:112 - UserDAO found user and pw info from DB: User [userName = nefis, password = nefis, userType = employee]
+2020-08-15 15:08:50 INFO  UserService:24 - UserService looking for user name ... dd
+2020-08-15 15:08:51 INFO  UserDAO:85 - UserDAO could not find user name from DB.
+2020-08-15 15:08:57 INFO  UserService:34 - User Service trying to insert user to DB ... User [userName = dd, password = dd, userType = employee]
+2020-08-15 15:08:57 INFO  UserDAO:139 - UserDAO successfully added new user to DB: User [userName = dd, password = dd, userType = employee]
+2020-08-15 15:09:21 INFO  UserDAO:42 - UserDAO successfully found all users from DB.
+2020-08-15 15:09:21 INFO  UserService:29 - UserService looking for user name and pw ... dd
+2020-08-15 15:09:21 INFO  UserDAO:113 - UserDAO found user and pw info from DB: User [userName = dd, password = dd, userType = employee]
+2020-08-15 15:14:59 INFO  UserService:24 - UserService looking for user name ... dd
+2020-08-15 15:15:00 INFO  UserDAO:91 - UserDAO could not find user name from DB.
+2020-08-15 15:15:04 INFO  UserService:34 - User Service trying to insert user to DB ... User [userName = dd, password = dd, userType = employee]
+2020-08-15 15:15:04 INFO  UserDAO:145 - UserDAO successfully added new user to DB: User [userName = dd, password = dd, userType = employee]
+2020-08-15 15:15:18 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 15:15:18 INFO  UserService:29 - UserService looking for user name and pw ... dd
+2020-08-15 15:15:18 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userName = dd, password = dd, userType = employee]
+2020-08-15 15:33:56 INFO  UserService:24 - UserService looking for user name ... nafis
+2020-08-15 15:33:57 INFO  UserDAO:91 - UserDAO could not find user name from DB.
+2020-08-15 15:34:04 INFO  UserService:34 - User Service trying to insert user to DB ... User [userId = 0, userName = nafis, password = nafis, userType = employee]
+2020-08-15 15:34:04 INFO  UserDAO:145 - UserDAO successfully added new user to DB: User [userId = 0, userName = nafis, password = nafis, userType = employee]
+2020-08-15 15:34:49 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 15:34:49 INFO  UserService:29 - UserService looking for user name and pw ... nafis
+2020-08-15 15:34:49 INFO  UserDAO:126 - UserDAO could not find user name and pw from DB.
+2020-08-15 15:34:56 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 15:34:56 INFO  UserService:29 - UserService looking for user name and pw ... nsgid
+2020-08-15 15:34:56 INFO  UserDAO:126 - UserDAO could not find user name and pw from DB.
+2020-08-15 15:35:09 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 15:35:09 INFO  UserService:29 - UserService looking for user name and pw ... nafis
+2020-08-15 15:35:09 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 5, userName = nafis, password = nafis, userType = employee]
+2020-08-15 15:56:23 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 15:56:23 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 15:56:24 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 15:56:24 INFO  UserService:21 - CustomerService looking for customer by user name ... ruki
+2020-08-15 15:56:24 INFO  UserService:22 - Customer logged in and about to do tasks.
+2020-08-15 15:56:24 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 15:58:33 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 15:58:33 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 15:58:33 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 15:58:33 INFO  UserService:21 - CustomerService looking for customer by user name ... ruki
+2020-08-15 15:58:33 INFO  UserService:22 - Customer logged in and about to do tasks.
+2020-08-15 15:58:34 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 15:58:39 INFO  UserService:27 - CustomerService looking for customer by id ...: 1
+2020-08-15 15:58:40 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 16:42:58 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 16:42:58 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 16:42:58 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 16:42:58 INFO  UserService:21 - CustomerService looking for customer by user name ... ruki
+2020-08-15 16:42:58 INFO  UserService:22 - Customer logged in and about to do tasks.
+2020-08-15 16:42:59 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 16:43:03 INFO  UserService:27 - CustomerService looking for customer by id ...: 1
+2020-08-15 16:43:04 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 16:56:54 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 16:56:54 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 16:56:54 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 16:56:54 INFO  UserService:21 - CustomerService looking for customer by user name ... ruki
+2020-08-15 16:56:54 INFO  UserService:22 - Customer logged in and about to do tasks.
+2020-08-15 16:56:54 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 16:56:57 INFO  UserService:27 - CustomerService looking for customer by id ...: 1
+2020-08-15 16:56:58 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 16:57:02 INFO  UserService:27 - CustomerService looking for customer by id ...: 1
+2020-08-15 16:57:02 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 17:00:07 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 17:00:07 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 17:00:07 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 17:00:07 INFO  UserService:21 - CustomerService looking for customer by user name ... ruki
+2020-08-15 17:00:07 INFO  UserService:22 - Customer logged in and about to do tasks.
+2020-08-15 17:00:07 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 17:00:13 INFO  UserService:27 - CustomerService looking for customer by id ...: 1
+2020-08-15 17:00:13 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 17:01:20 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 17:01:20 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 17:01:20 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 17:01:20 INFO  UserService:21 - CustomerService looking for customer by user name ... ruki
+2020-08-15 17:01:20 INFO  UserService:22 - Customer logged in and about to do tasks.
+2020-08-15 17:01:20 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 17:01:24 INFO  UserService:27 - CustomerService looking for customer by id ...: 1
+2020-08-15 17:01:25 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 17:11:40 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 17:11:40 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 17:11:41 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 17:11:41 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 17:11:41 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 17:11:41 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 17:11:43 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 17:11:44 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 17:16:59 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 17:16:59 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 17:16:59 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 17:16:59 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 17:16:59 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 17:17:00 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 17:17:02 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 17:17:02 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 17:17:17 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 17:17:17 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 18:44:27 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 18:44:27 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 18:44:27 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 18:44:27 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 18:44:27 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 18:44:27 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 18:44:31 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 18:44:31 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 18:45:29 INFO  UserService:198 - CustomerDAO could not find customer by name from DB.
+2020-08-15 18:45:29 INFO  UserService:39 - CustomerService could not update customer information on DB.
+2020-08-15 18:45:29 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 18:45:30 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 18:46:48 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 18:46:48 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 18:46:48 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 18:46:48 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 18:46:48 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 18:46:48 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 18:46:51 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 18:46:51 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 18:50:46 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 18:50:46 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 18:50:46 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 18:50:46 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 18:50:46 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 18:50:46 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 18:50:49 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 18:50:49 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 18:52:21 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 18:52:21 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 18:52:21 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 18:52:21 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 18:52:21 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 18:52:22 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 18:52:24 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 18:52:24 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 18:54:00 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 18:54:00 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 18:54:00 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 18:54:00 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 18:54:00 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 18:54:00 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 18:54:02 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 18:54:02 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 18:54:38 INFO  UserService:198 - CustomerDAO could not find customer by name from DB.
+2020-08-15 18:54:38 INFO  UserService:39 - CustomerService could not update customer information on DB.
+2020-08-15 18:54:38 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 18:54:38 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:00:19 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 19:00:19 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 19:00:19 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 19:00:19 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 19:00:19 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 19:00:20 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:00:23 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:00:23 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:00:59 INFO  UserService:202 - CustomerDAO could not find customer by name from DB.
+2020-08-15 19:00:59 INFO  UserService:39 - CustomerService could not update customer information on DB.
+2020-08-15 19:00:59 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:00:59 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=999uyt, city=garden, state=sky, zip=9876, phoneNumber=12345678 ]
+2020-08-15 19:08:17 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 19:08:17 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 19:08:17 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 19:08:17 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 19:08:17 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 19:08:18 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=999uyt, city=garden, state=sky, zip=9876, phoneNumber=12345678 ]
+2020-08-15 19:08:20 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:08:21 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=999uyt, city=garden, state=sky, zip=9876, phoneNumber=12345678 ]
+2020-08-15 19:09:09 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 19:09:09 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 19:09:09 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 19:09:09 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 19:09:09 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 19:09:10 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=999uyt, city=garden, state=sky, zip=9876, phoneNumber=12345678 ]
+2020-08-15 19:09:12 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:09:12 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=999uyt, city=garden, state=sky, zip=9876, phoneNumber=12345678 ]
+2020-08-15 19:09:40 INFO  UserService:202 - CustomerDAO could not find customer by name from DB.
+2020-08-15 19:09:40 INFO  UserService:39 - CustomerService could not update customer information on DB.
+2020-08-15 19:09:40 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:09:41 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:12:04 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 19:12:04 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 19:12:05 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 19:12:05 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 19:12:05 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 19:12:05 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:12:07 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:12:07 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:12:30 INFO  UserService:202 - CustomerDAO could not find customer by name from DB.
+2020-08-15 19:12:30 INFO  UserService:39 - CustomerService could not update customer information on DB.
+2020-08-15 19:12:30 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:12:31 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=999 kkk, city=poiu, state=poiu, zip=9876, phoneNumber=12345678 ]
+2020-08-15 19:23:01 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 19:23:01 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 19:23:01 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 19:23:01 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 19:23:01 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 19:23:02 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=999 kkk, city=poiu, state=poiu, zip=9876, phoneNumber=12345678 ]
+2020-08-15 19:23:03 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:23:03 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=999 kkk, city=poiu, state=poiu, zip=9876, phoneNumber=12345678 ]
+2020-08-15 19:23:26 INFO  UserService:205 - CustomerDAO could not find customer by name from DB.
+2020-08-15 19:23:26 INFO  UserService:39 - CustomerService could not update customer information on DB.
+2020-08-15 19:23:26 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:23:26 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:24:57 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 19:24:57 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 19:24:57 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 19:24:57 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 19:24:57 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 19:24:58 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:25:00 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:25:00 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:25:19 INFO  UserService:205 - CustomerDAO could not find customer by name from DB.
+2020-08-15 19:25:19 INFO  UserService:39 - CustomerService could not update customer information on DB.
+2020-08-15 19:25:19 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:25:19 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=9876 poiu, city=poiu, state=poiu, zip=9876, phoneNumber=12345678 ]
+2020-08-15 19:27:06 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 19:27:06 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 19:27:07 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 19:27:07 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 19:27:07 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 19:27:07 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=9876 poiu, city=poiu, state=poiu, zip=9876, phoneNumber=12345678 ]
+2020-08-15 19:27:09 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:27:09 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=9876 poiu, city=poiu, state=poiu, zip=9876, phoneNumber=12345678 ]
+2020-08-15 19:27:29 INFO  UserService:199 - CustomerDAO successfully updated customer personal info on DB: 
+2020-08-15 19:27:29 INFO  UserService:36 - CustomerService successfully updated customer information.
+2020-08-15 19:54:51 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 19:54:51 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 19:54:51 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 19:54:51 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 19:54:51 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 19:54:51 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:54:54 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:54:54 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:55:12 INFO  UserService:227 - CustomerDAO could not update customer personal info from DB.
+2020-08-15 19:55:12 INFO  UserService:48 - CustomerService could not update customer information on DB.
+2020-08-15 19:55:12 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:55:12 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:56:32 INFO  UserDAO:48 - UserDAO successfully found all users from DB.
+2020-08-15 19:56:32 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-15 19:56:32 INFO  UserDAO:119 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-15 19:56:32 INFO  UserService:22 - CustomerService looking for customer by user name ... ruki
+2020-08-15 19:56:32 INFO  UserService:23 - Customer logged in and about to do tasks.
+2020-08-15 19:56:32 INFO  UserService:130 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:56:34 INFO  UserService:28 - CustomerService looking for customer by id ...: 1
+2020-08-15 19:56:35 INFO  UserService:79 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=12345678 ]
+2020-08-15 19:56:42 INFO  UserService:220 - CustomerDAO successfully updated customer personal info on DB: 
+2020-08-15 19:56:42 INFO  UserService:45 - CustomerService successfully updated customer information.

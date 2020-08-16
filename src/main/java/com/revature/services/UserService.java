@@ -21,17 +21,17 @@ public class UserService {
 	}
 	
 	public User findUserByName(String name) {	
-		log.info("UserServicefin user by name: " + name);
+		log.info("UserService looking for user name ... " + name);
 		return userDao.findByName(name);
 	}
 	
 	public User findUserByNameByPW(String name, String pw) {	
-		log.info("UserService gets user info from driver: " + name);
+		log.info("UserService looking for user name and pw ... " + name);
 		return userDao.findByNamePW(name, pw);
 	}
 	
 	public boolean insertUser(User u) {
-		log.info("User Service insertUser " + u);
+		log.info("User Service trying to insert user to DB ... " + u);
 		if(userDao.addUser(u)) {
 			return true;
 		}

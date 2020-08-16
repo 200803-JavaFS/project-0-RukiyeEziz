@@ -23,36 +23,49 @@ public class Customer {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	// order strictly matter for args/params have to align with DB
 	public Customer(int  customerId,
 					String firstName, 
 					String middleName, 
-					String lastName, 
-					String userName,
+					String lastName, 	
 					String address,
 					String city,
 					String state,
 					int zip,
-					int phoneNumber) {
+					int phoneNumber,
+					String userName) {
 		super();
 		this.customerId = customerId;
 		this.firstName = firstName;
 		this.middleName = middleName;
-		this.lastName = lastName;
-		this.userName= userName;
+		this.lastName = lastName;		
 		this.address = address;
 		this.userName = userName;
 		this.city= city;
 		this.state = state;
 		this.zip = zip;
 		this.phoneNumber = phoneNumber;
+		this.userName= userName;
 	}
-	public Customer(String address, String city, String state, int zip, int phoneNumber) {
+	public Customer(String firstName, 
+					String middleName, 
+					String lastName, 			
+					String address, 
+					String city, 
+					String state, 
+					int zip, 
+					int phoneNumber,
+					String userName) {
 		super();
+		this.firstName = firstName;
+		this.middleName = middleName;
+		this.lastName = lastName;	
 		this.address = address;
 		this.city = city;
 		this.state = state;
 		this.zip = zip;
 		this.phoneNumber = phoneNumber;
+		this.userName= userName;
 	}
 	public int getCustomerId() {
 		return customerId;

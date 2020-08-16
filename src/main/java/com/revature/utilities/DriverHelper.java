@@ -1,6 +1,6 @@
 package com.revature.utilities;
 
-
+import java.util.List;
 import java.util.Scanner;
 
 import com.revature.controllers.CustomerController;
@@ -159,13 +159,13 @@ public class DriverHelper {
 		
 				
 		// this is just for testing get all users infor
-		/*
+		// this is stiuation that admin view all user and edit to make chages
 		List<User> userAllList = userService.findAll();
 		System.out.println("All user in DB:");
 		for(User u : userAllList) {
 			System.out.println(u);
 		}
-		*/
+		
 		
 		/*
 		System.out.println("your user name: " + userName);
@@ -173,9 +173,9 @@ public class DriverHelper {
 		*/
 		
 		User userNameDB = userService.findUserByNameByPW(userName, userPassword);
-		System.out.println(userNameDB.getUserName() + " " + userNameDB.getPassword());
+		//System.out.println(userNameDB.getUserName() + " " + userNameDB.getPassword());
 		//System.out.println("driver " + userNameDB);
-		if(userNameDB != null && userNameDB.getUserName() .equals(userName) && userNameDB.getPassword().equals(userPassword)) {		
+		if(userNameDB != null && userNameDB.getUserName().equals(userName) && userNameDB.getPassword().equals(userPassword)) {		
 			System.out.println("Welcome " + userName + ". You have succefully logged in.");	
 			System.out.println(userName + " " + userPassword + " " + userType);
 			System.out.println("**************************************************************");
@@ -184,9 +184,11 @@ public class DriverHelper {
 					customerController.customerTasks(userName);
 					break;
 				case "employee":
+					System.out.println("build employee tasks here..");
 					//employeeController.employeeTasks(userName);
 					break;
 				case "admin":
+					System.out.println("build admin tasks here...");
 					//adminController.adminTasks(userName);
 					break;
 				default:
@@ -212,9 +214,9 @@ public class DriverHelper {
 		System.out.print("User Name: ");
 		String userName = scan.next();		////// TO DO: userName restriction
 		
-		User userNameDB = userService.findUserByName(userName);
-		System.out.println(userNameDB.getUserName());
-		if(userNameDB.getUserName() != null ) {
+		User user = userService.findUserByName(userName);
+		//System.out.println(user.getUserName());
+		if(user != null ) {
 			System.out.println("Similar user name already exist in the DB. Try other name.");
 			System.out.println("Enter your user name and password:\n");
 			System.out.print("User Name: ");
@@ -246,8 +248,8 @@ public class DriverHelper {
 		create = created;
 		//System.out.println(userName + " " + userPassword1 + " " +  userPassword2 + " " +  userType + " create " +  create);
 		
-		User user = new User(userName, userPassword1, userType);
-		boolean newUserCreated = userService.insertUser(user);
+		User newUser = new User(userName, userPassword1, userType);
+		boolean newUserCreated = userService.insertUser(newUser);
 		if(!newUserCreated) {
 			System.out.println("Something went wrong. Please try again.");
 			beginApp();
