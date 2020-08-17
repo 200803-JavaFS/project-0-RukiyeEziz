@@ -27,4 +27,21 @@ public class AccountService {
 		log.info("AccountService looking for an account by customer id ... " + customerid + " and account id " + accountid );
 		return accountDao.findByIds(customerid, accountid);
 	}
+	
+	public boolean depositAccount(int customerid, long accountid, double amount) {
+		log.info("AccountService depositing to an account ...");
+		if(accountDao.depositAccount(customerid, accountid, amount)) {
+			
+			return true;
+		}
+		return false;
+	}
+	public boolean withdrawAccount(int customerid, long accountid, double amount) {
+		log.info("AccountService withdrawing from an account ...");
+		if(accountDao.withdrawAccount(customerid, accountid, amount)) {
+			
+			return true;
+		}
+		return false;
+	}
 }

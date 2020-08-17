@@ -122,5 +122,75 @@ public class AccountDAO implements IAccountDAO {
 		return null;
 	}
 
+	@Override
+	public boolean depositAccount(int customerid, long accountid, double amount) {
+		try(Connection conn = ConnectionUtility.getConnection()){
+			String sql = "UPDATE accounts "
+					+ "SET balance = " + amount + " "
+					+ "WHERE customer_id_fk = " + customerid + " AND account_id = " + accountid + ";";
+			
+			Statement statement = conn.createStatement();
+			statement.execute(sql);
+				
+				log.info("AccountDAO found account by customer id from DB: " );
+				
+				return true;
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+					
+		log.info("AccountDAO could not deposit to ccount on DB.");	
+		return false;
+	}
+
+	@Override
+	public boolean withdrawAccount(int customerid, long accountid, double amount) {
+		try(Connection conn = ConnectionUtility.getConnection()){
+			String sql = "UPDATE accounts "
+					+ "SET balance = " + amount + " "
+					+ "WHERE customer_id_fk = " + customerid + " AND account_id = " + accountid + ";";
+			
+			Statement statement = conn.createStatement();
+			statement.execute(sql);
+				
+				log.info("AccountDAO found account by customer id from DB: " );
+				
+				return true;
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+					
+		log.info("AccountDAO could not deposit to ccount on DB.");	
+		return false;
+	}
+
+//	@Override
+//	public Account transferFunds(int customerid1, int customerid2, long accountid1, long accountid2, double amount) {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+
+	@Override
+	public boolean approveDenyAccount(int customerid, long accountid, boolean approved) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateAccount(int customerid, long accountid) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteAccount(int customerid, long accountid) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 	
 }

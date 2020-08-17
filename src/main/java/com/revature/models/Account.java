@@ -1,6 +1,7 @@
 package com.revature.models;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Account implements Serializable{	
@@ -41,6 +42,8 @@ public class Account implements Serializable{
 		this.internalMemo = internalMemo;
 		this.createdDateTime = createdDateTime;
 	}
+	
+	
 
 	public Long getAccountId() {
 		return accountId;
@@ -175,9 +178,5 @@ public class Account implements Serializable{
 				+ ", accountBalance=" + accountBalance + ", status=" + status + ", customerId=" + customerId
 				+ ", internalMemo=" + internalMemo + ", createdDateTime=" + createdDateTime + "]";
 	}
-	
-	
-	
-	
 
 }

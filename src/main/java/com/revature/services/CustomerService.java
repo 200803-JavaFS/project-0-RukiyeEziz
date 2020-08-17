@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.revature.daos.CustomerDAO;
 import com.revature.daos.ICustomerDAO;
+import com.revature.models.Account;
 import com.revature.models.Customer;
 
 public class CustomerService {
@@ -47,5 +48,30 @@ public class CustomerService {
 		log.info("CustomerService could not update customer information on DB.");
 		return false;
 	}
+	
+	
+	/*
+
+	public void printAccountSummary(int theAccount) {
+		// TODO Auto-generated method stub
+		System.out.println("get finish and grab it from customer.java");
+	}
+
+	public double getAccountBalance(int fromAccount) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void addAccountTransaction(int fromAccount, double d, String memo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void addAccountTransaction(int toAccount, double amount, String memo) {
+		// TODO Auto-generated method stub
+		
+	}
+*/
+
 	
 }
