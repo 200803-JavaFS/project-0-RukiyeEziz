@@ -16,14 +16,12 @@ public class CustomerController {
 	private CustomerService customerService = new CustomerService();
 	private static DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); 
 	private static Scanner scan = new Scanner(System.in);
+	
 	public void customerTasks(String username) {
-		//
-		Customer c = customerService.findCustomerByName(username);
-		
+		Customer c = customerService.findCustomerByName(username);	
 		int customerId = 0;
-
 		if(c.getUserName() != null ) {
-			System.out.println("Your customer ID user name: " + c.getUserName());
+			System.out.println("Your customer User Name: " + c.getUserName());
 			System.out.println("Your customer ID: " + c.getCustomerId() );
 			customerId = c.getCustomerId();
 		}
@@ -52,7 +50,7 @@ public class CustomerController {
 		switch (option) {
 
 			case "1":
-				accountController.manageAccount(customerId);   ////////////// account related
+				accountController.manageAccount(customerId);
 				break;
 			case "2":
 				createNewAccount(customerId);   //////////////account related
@@ -70,10 +68,8 @@ public class CustomerController {
 				System.out.println("\n**************************************************************\n");
 				customerTasks(username);
 				break;		
-		}// end of switch
-		
+		}// end of switch	
 	}
-	
 
 	private void createNewAccount(int id) {
 		System.out.println("create a new account");
@@ -151,12 +147,7 @@ public class CustomerController {
 				System.out.println("\n**************************************************************\n");
 				editPersonalInfo(id);
 				break;		
-		}// end of switch
-
-		
-	}
-	
-
-
+		}// end of switch		
+	}// end of editPersonalInfo(int id)
 
 } // end of controller

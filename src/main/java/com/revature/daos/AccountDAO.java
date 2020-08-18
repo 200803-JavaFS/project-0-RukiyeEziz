@@ -174,23 +174,10 @@ public class AccountDAO implements IAccountDAO {
 //		return null;
 //	}
 
-	@Override
-	public boolean approveDenyAccount(int customerid, long accountid, boolean approved) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 
-	@Override
-	public boolean updateAccount(int customerid, long accountid) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 
-	@Override
-	public boolean deleteAccount(int customerid, long accountid) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	
 
+	
 	
 }

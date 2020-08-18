@@ -1132,3 +1132,687 @@
 2020-08-17 01:25:56 INFO  UserService:22 - AccountService looking for account by customer id ... 1
 2020-08-17 01:25:56 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
 2020-08-17 01:25:56 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4900.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 11:15:33 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 11:15:33 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 11:15:33 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 11:15:33 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 11:15:33 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 11:15:34 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 11:15:50 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 11:15:50 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 11:15:50 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4900.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 11:16:21 INFO  UserService:40 - AccountService withdrawing from an account ...
+2020-08-17 11:16:21 INFO  AccountService:158 - AccountDAO found account by customer id from DB: 
+2020-08-17 11:16:21 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-17 11:16:21 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 11:16:21 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 11:16:21 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 11:16:21 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 14:30:52 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 14:30:52 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 14:30:52 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 14:30:52 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 14:30:52 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 14:30:52 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 14:30:57 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 14:30:57 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 14:30:57 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 15:04:14 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 15:04:14 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 15:04:15 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 15:04:15 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 15:04:15 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 15:04:15 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 15:04:17 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 15:04:18 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 15:04:18 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 15:04:43 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 15:04:43 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 15:04:43 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 15:04:43 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 15:04:43 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 15:04:43 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 15:04:46 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 15:04:46 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 15:04:46 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 15:07:38 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 15:07:38 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 15:07:38 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 15:07:38 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 15:07:38 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 15:07:39 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 15:07:40 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 15:07:41 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 15:07:41 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 15:08:46 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 15:08:46 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 15:08:46 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 15:08:46 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 15:08:46 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 15:08:47 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 15:08:48 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 15:08:48 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 15:08:48 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 15:22:57 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 15:22:57 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 15:22:57 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 15:22:57 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 15:22:57 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 15:22:57 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 15:23:00 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 15:23:01 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 15:23:01 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 16:20:33 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 16:20:33 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 16:20:33 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 16:20:33 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 16:20:33 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 16:20:34 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 16:20:36 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 16:20:36 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 16:20:36 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 16:30:28 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 16:30:28 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 16:30:29 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 16:30:29 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 16:30:29 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 16:30:29 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 16:30:56 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 16:30:56 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 16:30:56 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 16:31:08 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 16:31:09 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 16:31:09 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 16:43:36 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 16:43:36 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 16:43:36 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 16:43:36 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 16:43:36 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 16:43:36 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 16:43:42 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 16:43:42 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 16:43:42 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 16:45:33 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 16:45:33 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 16:45:33 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 16:45:33 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 16:45:33 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 16:45:33 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 16:45:35 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 16:45:36 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 16:45:36 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:10:51 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 17:10:51 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 17:10:51 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 17:10:51 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 17:10:51 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 17:10:51 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 17:10:54 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:10:54 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=800.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:10:54 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:12:05 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 17:12:05 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 17:12:05 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 17:12:05 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 17:12:05 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:12:06 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:12:06 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=1000.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:20:37 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 17:20:37 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 17:20:37 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 17:20:37 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 17:20:37 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 17:20:38 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 17:20:39 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:20:39 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:20:39 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=1000.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:22:10 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 17:22:10 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 17:22:10 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 17:22:10 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 17:22:10 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 17:22:11 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 17:22:12 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:22:12 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:22:12 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=1000.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:22:20 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:22:20 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:22:20 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=1000.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:25:50 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 17:25:50 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 17:25:51 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 17:25:51 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 17:25:51 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 17:25:51 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 17:25:53 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:25:53 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:25:53 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=1000.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:25:59 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:25:59 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:25:59 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=1000.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:26:08 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:26:08 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4600.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:26:08 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=1000.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:26:29 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 17:26:30 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 17:26:30 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-17 17:26:30 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 17:26:30 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:26:30 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=1000.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:26:30 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4800.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:28:17 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 17:28:17 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 17:28:17 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 17:28:17 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 17:28:17 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 17:28:17 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 17:28:19 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:28:19 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=1000.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:28:19 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4800.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:29:30 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 17:29:30 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 17:29:30 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 17:29:30 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 17:29:30 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:29:31 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4800.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:29:31 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:32:16 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 17:32:16 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 17:32:16 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 17:32:16 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 17:32:16 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 17:32:16 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 17:32:18 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:32:19 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4800.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:32:19 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:33:47 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 17:33:47 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 17:33:48 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 17:33:48 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 17:33:48 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 17:33:48 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 17:33:49 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:33:50 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4800.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:33:50 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:34:31 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 17:34:31 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 17:34:31 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 17:34:31 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 17:34:31 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 17:34:31 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 17:34:33 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:34:33 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4800.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:34:33 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:35:34 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 17:35:34 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 17:35:34 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 17:35:34 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 17:35:34 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 17:35:34 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 17:35:36 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:35:37 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4800.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:35:37 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:36:33 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 17:36:33 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 17:36:33 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 17:36:33 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 17:36:33 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 17:36:33 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 17:36:35 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:36:35 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4800.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 17:36:35 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:36:48 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 17:36:48 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 17:36:48 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-17 17:36:49 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 17:36:49 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 17:36:49 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 17:36:49 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5000.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:10:36 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 18:10:36 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 18:10:36 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 18:10:36 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 18:10:36 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 18:10:36 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 18:10:43 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 18:10:43 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 18:10:43 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 18:11:43 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 18:11:43 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 18:11:44 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 18:11:52 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:11:52 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:11:52 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5000.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:14:15 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 18:14:15 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 18:15:18 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 18:15:18 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 18:15:18 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 18:15:18 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 18:15:18 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 18:15:19 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 18:15:20 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:15:20 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:15:20 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5010.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:15:43 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 18:15:43 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 18:15:43 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-17 18:15:43 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 18:16:11 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:16:11 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:16:11 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:16:16 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:16:16 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:16:16 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:16:19 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:16:19 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:16:19 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:16:33 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:16:33 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:16:33 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:19:48 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:19:48 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:19:48 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:24:22 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 18:24:22 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 18:24:22 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 18:24:22 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 18:24:22 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 18:24:22 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 18:24:26 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:24:26 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2200.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:24:26 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:24:40 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 18:24:41 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 18:24:41 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 18:24:41 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 18:24:48 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:24:49 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:24:49 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2300.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:25:36 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 18:25:36 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 18:25:36 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 18:25:36 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 18:25:36 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 18:25:37 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 18:25:38 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:25:38 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:25:38 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2300.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:25:50 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 18:25:51 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 18:25:51 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 18:25:51 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 18:25:56 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:25:57 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:25:57 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2500.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:31:12 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 18:31:12 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 18:31:12 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 18:31:12 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 18:31:12 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 18:31:13 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 18:31:14 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:31:14 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:31:14 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2500.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:31:27 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 18:31:27 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 18:31:27 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 18:31:27 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 18:31:37 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:31:37 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:31:37 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2700.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:34:30 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 18:34:30 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 18:34:30 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 18:34:30 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 18:34:30 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 18:34:31 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 18:34:34 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:34:34 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:34:34 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2700.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:34:41 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:34:42 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:34:42 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2700.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:34:45 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:34:45 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:34:45 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2700.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:37:50 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 18:37:50 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 18:37:50 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 18:37:50 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 18:37:50 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 18:37:50 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 18:37:53 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:37:54 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:37:54 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2700.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:38:11 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 18:38:11 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 18:38:11 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 18:38:11 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 18:38:20 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:38:20 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:38:20 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:38:28 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 18:38:29 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 18:38:29 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 18:38:50 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 18:38:51 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 18:38:51 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 18:38:51 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 19:09:41 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 19:09:41 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 19:09:41 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 19:09:41 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 19:09:41 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 19:09:41 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 19:09:45 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 19:09:45 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 19:09:45 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=3100.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 19:09:54 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 19:09:54 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 19:09:54 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=3100.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 19:09:59 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 19:09:59 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 19:09:59 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=3100.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 19:17:55 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 19:17:55 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 19:17:55 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 19:17:55 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 19:17:55 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 19:17:56 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 19:18:02 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 19:18:02 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 19:18:02 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=3100.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 19:18:25 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 19:18:26 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 19:18:26 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=3100.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 19:22:17 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 19:22:17 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 19:22:18 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 19:22:18 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 19:22:18 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 19:22:18 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 19:22:24 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 19:22:24 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 19:22:24 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=3100.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 19:22:38 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 19:22:39 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 19:22:39 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=3100.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 19:23:02 INFO  UserService:40 - AccountService withdrawing from an account ...
+2020-08-17 19:23:02 INFO  AccountService:158 - AccountDAO found account by customer id from DB: 
+2020-08-17 19:23:02 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-17 19:23:02 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 19:24:12 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 19:24:12 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 19:24:12 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 19:24:12 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 19:24:12 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 19:24:13 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 19:24:20 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 19:24:20 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=3100.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 19:24:20 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4720.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 19:25:22 INFO  UserService:40 - AccountService withdrawing from an account ...
+2020-08-17 19:25:22 INFO  AccountService:158 - AccountDAO found account by customer id from DB: 
+2020-08-17 19:25:22 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 19:25:22 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 19:25:27 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 19:25:27 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4720.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 19:25:27 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 20:10:35 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 20:10:35 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 20:10:36 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 20:10:36 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 20:10:36 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 20:10:36 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 20:10:42 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 20:10:42 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4720.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 20:10:42 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 21:05:17 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:05:17 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:05:18 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:05:18 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:05:18 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:05:18 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:05:21 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 21:05:21 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4720.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 21:05:21 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 21:06:43 INFO  UserService:40 - AccountService withdrawing from an account ...
+2020-08-17 21:06:44 INFO  AccountService:158 - AccountDAO found account by customer id from DB: 
+2020-08-17 21:06:44 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 21:06:44 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 21:06:44 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-17 21:06:44 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 21:06:44 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 0
+2020-08-17 21:06:44 INFO  AccountService:121 - AccountDAO could not find the specific one account from DB.
+2020-08-17 21:13:21 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:13:21 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:13:21 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:13:21 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:13:21 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:13:21 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:13:24 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 21:13:24 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 21:13:24 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 21:14:46 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:14:46 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:14:47 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:14:47 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:14:47 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:14:47 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:14:49 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 21:14:49 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 21:14:49 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 21:20:32 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:20:32 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:20:32 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:20:32 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:20:32 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:20:33 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:20:34 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 21:20:35 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 21:20:35 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 21:22:38 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:22:38 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:22:38 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:22:38 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:22:38 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:22:38 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:22:40 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 21:22:40 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 21:22:40 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 21:23:55 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:23:55 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:23:56 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:23:56 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:23:56 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:23:56 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:23:58 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 21:23:58 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 21:23:58 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 21:28:13 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:28:14 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:28:14 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:28:14 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:28:14 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:28:14 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:28:17 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 21:28:17 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 21:28:17 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 21:33:09 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:33:09 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:33:09 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:33:09 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:33:09 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:33:10 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:33:12 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 21:33:12 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 21:33:12 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 21:34:07 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:34:07 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:34:07 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:34:07 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:34:07 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:34:07 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:34:10 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 21:34:10 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 21:34:10 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 21:36:49 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:36:49 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:36:49 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:36:49 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:36:49 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:36:50 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:36:52 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 21:36:52 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 21:36:52 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 21:39:05 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:39:05 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:39:05 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:39:05 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:39:05 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:39:05 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:39:08 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 21:39:08 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=2900.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 21:39:08 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4020.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 21:40:28 INFO  UserService:40 - AccountService withdrawing from an account ...
+2020-08-17 21:40:28 INFO  AccountService:158 - AccountDAO found account by customer id from DB: 
+2020-08-17 21:40:28 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 21:40:28 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 21:40:28 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-17 21:40:29 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 21:40:29 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 21:40:29 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 21:44:47 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:44:47 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:44:47 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:44:47 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:44:47 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:44:47 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:44:49 INFO  UserService:29 - CustomerService looking for customer by id ...: 1
+2020-08-17 21:44:50 INFO  UserService:80 - CustomerDAO found customer by id from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:45:14 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:45:14 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:45:14 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:45:14 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:45:14 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:45:14 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:45:19 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 21:45:20 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=3820.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 21:45:20 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=3100.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 21:45:43 INFO  UserService:40 - AccountService withdrawing from an account ...
+2020-08-17 21:45:44 INFO  AccountService:158 - AccountDAO found account by customer id from DB: 
+2020-08-17 21:45:44 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 21:45:44 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 21:45:44 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-17 21:45:44 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 21:45:44 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 21:45:44 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 21:47:50 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:47:50 INFO  UserService:29 - UserService looking for user name and pw ... ruki'
+2020-08-17 21:47:51 INFO  UserDAO:124 - UserDAO could not find user name and pw from DB.
+2020-08-17 21:47:57 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 21:47:57 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 21:47:58 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 21:47:58 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 21:47:58 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 21:47:58 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 21:48:03 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 21:48:03 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=3420.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 21:48:03 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=3500.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 22:01:56 INFO  UserService:40 - AccountService withdrawing from an account ...
+2020-08-17 22:01:57 INFO  AccountService:158 - AccountDAO found account by customer id from DB: 
+2020-08-17 22:01:57 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 22:01:57 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 22:01:57 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-17 22:01:57 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 22:01:57 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 22:01:58 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 22:02:23 INFO  UserService:40 - AccountService withdrawing from an account ...
+2020-08-17 22:02:23 INFO  AccountService:158 - AccountDAO found account by customer id from DB: 
+2020-08-17 22:02:23 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 22:02:23 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 22:02:23 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-17 22:02:24 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 22:02:24 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 22:02:24 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 22:04:01 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 22:04:01 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 22:04:01 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 22:04:01 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 22:04:01 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 22:04:01 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 22:04:04 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 22:04:04 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=-580.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 22:04:04 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=7500.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 22:05:27 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 22:05:27 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 22:05:27 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 22:05:27 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 22:05:27 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 22:05:27 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 22:05:30 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 22:05:30 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=7500.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 22:05:30 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=200.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 22:06:10 INFO  UserService:40 - AccountService withdrawing from an account ...
+2020-08-17 22:06:11 INFO  AccountService:158 - AccountDAO found account by customer id from DB: 
+2020-08-17 22:06:11 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 22:06:11 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 22:06:11 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-17 22:06:11 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 22:06:11 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 22:06:12 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 22:06:30 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 22:06:30 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=1.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 22:06:30 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=7699.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 22:08:02 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 22:08:02 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 22:08:02 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 22:08:02 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 22:08:02 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 22:08:02 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 22:08:04 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 22:08:04 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=1.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 22:08:04 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=7699.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 22:08:44 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 22:08:44 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=1.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 22:08:44 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=7699.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 22:10:44 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 22:10:44 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 22:10:45 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 22:10:45 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 22:10:45 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 22:10:45 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 22:10:48 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 22:10:48 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=1.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 22:10:48 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=7699.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 22:12:59 INFO  UserDAO:47 - UserDAO successfully found all users from DB.
+2020-08-17 22:12:59 INFO  UserService:29 - UserService looking for user name and pw ... ruki
+2020-08-17 22:13:00 INFO  UserDAO:117 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-17 22:13:00 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 22:13:00 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 22:13:00 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 22:13:02 INFO  UserService:23 - CustomerService looking for customer by user name ... ruki
+2020-08-17 22:13:02 INFO  UserService:24 - Customer logged in and about to do tasks.
+2020-08-17 22:13:02 INFO  UserService:131 - CustomerDAO found customer by name from DB: Customer [customerId=1, firstName=Rukiye, middleName=Nafis, lastName=Eziz, userName=ruki, address=123 abc, city=Tokyo, state=Tokyo, zip=1234, phoneNumber=98765432 ]
+2020-08-17 22:13:05 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 22:13:05 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=1.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 22:13:05 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=7699.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 22:13:17 INFO  UserService:40 - AccountService withdrawing from an account ...
+2020-08-17 22:13:17 INFO  AccountService:158 - AccountDAO found account by customer id from DB: 
+2020-08-17 22:13:17 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 22:13:17 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 22:13:17 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-17 22:13:18 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 22:13:18 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 22:13:18 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 22:13:35 INFO  UserService:22 - AccountService looking for account by customer id ... 1
+2020-08-17 22:13:36 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=0.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-15]
+2020-08-17 22:13:36 INFO  AccountService:78 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=7700.0, status=pending, customerId=1, internalMemo=waiting for approve or deny, createdDateTime=2020-08-15]
+2020-08-17 22:14:12 INFO  UserService:40 - AccountService withdrawing from an account ...
+2020-08-17 22:14:12 INFO  AccountService:158 - AccountDAO found account by customer id from DB: 
+2020-08-17 22:14:12 INFO  UserService:32 - AccountService depositing to an account ...
+2020-08-17 22:14:12 INFO  AccountService:135 - AccountDAO found account by customer id from DB: 
+2020-08-17 22:14:12 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-17 22:14:13 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
+2020-08-17 22:14:13 INFO  UserService:27 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-17 22:14:13 INFO  AccountService:112 - AccountDAO successfully found the specific one account from DB.
