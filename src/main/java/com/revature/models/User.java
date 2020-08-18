@@ -10,8 +10,6 @@ public class User implements Serializable{
 	private String password;
 	private String userType; // client, employee, admin
 	
-//	private boolean logInAccount = false;
-//	private boolean createAccount = false;
 	public User() {
 		// TODO Auto-generated constructor stub
 		super();
@@ -30,23 +28,10 @@ public class User implements Serializable{
 		this.userType = usertype;
 	}
 	
-//	public User(int i, String name, String pw, String type)   //, boolean logIn, boolean create) {
-//		super();
-//		this.userId = i;
-//		this.userName = name;
-//		this.password = pw;
-//		this.userType = type;
-////		this.logInAccount = logIn;
-////		this.createAccount = create;
-//		
-//	}
-//	
 	public User(String name) {
 		super();
 		this.userName = name;
 	}
-
-
 
 	public String getUserName() {
 		return userName;
@@ -79,22 +64,6 @@ public class User implements Serializable{
 	public void setUserType(String userType) {
 		this.userType = userType;
 	}
-	
-//	public boolean isLogInAccount() {
-//		return logInAccount;
-//	}
-//
-//	public void setLogInAccount(boolean logInAccount) {
-//		this.logInAccount = logInAccount;
-//	}
-//
-//	public boolean isCreateAccount() {
-//		return createAccount;
-//	}
-//
-//	public void setCreateAccount(boolean createAccount) {
-//		this.createAccount = createAccount;
-//	}
 	
 	@Override
 	public int hashCode() {

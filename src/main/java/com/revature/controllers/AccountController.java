@@ -25,6 +25,7 @@ public class AccountController {
 //		}
 		
 		// print all account(s) that belong to per customer
+		System.out.println(id);
 		int customerId = id;
 		System.out.println("Your Account(s) Information:");
 		List<Account> accountList = accountService.findAccountByCustomerId(customerId);
@@ -194,7 +195,7 @@ public class AccountController {
 	 * 
 	 */
 	private void deposit(int customerid, List<Account> accountList) {
-		
+		System.out.println(accountList.size());
 		 // if there is no account(s) deposit process end
 		if(accountList.size() != 0) {
 			for(Account a : accountList) {

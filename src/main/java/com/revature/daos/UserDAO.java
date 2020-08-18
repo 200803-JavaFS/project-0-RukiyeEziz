@@ -11,12 +11,14 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.revature.models.Customer;
 import com.revature.models.User;
 import com.revature.utilities.ConnectionUtility;
 
 
 public class UserDAO implements IUserDAO {
 	private static final Logger log = LogManager.getLogger(UserDAO.class);
+	private ICustomerDAO cDao = new CustomerDAO();
 	
 	@Override
 	public List<User> findAll() {
@@ -30,12 +32,6 @@ public class UserDAO implements IUserDAO {
 			ResultSet result = statement.executeQuery(sql);
 			
 			while(result.next()) {
-//				User user = new User();
-//				user.setUserId(result.getInt("user_id")); 
-//				user.setUserName(result.getString( "user_name"));
-//				user.setPassword(result.getString("user_pw"));
-//				user.setUserType(result.getString("user_type"));
-//				list.add(user);
 				User user = new User(
 						result.getInt("user_id"),
 						result.getString("user_name"),
@@ -68,12 +64,6 @@ public class UserDAO implements IUserDAO {
 			ResultSet result = statement.executeQuery();
 			
 			if(result.next()) {
-//				User user = new User();
-//				user.setUserName(result.getString("user_name"));
-//				user.setPassword(result.getString("user_pw"));
-//				user.setUserType(result.getString("user_type"));
-//				System.out.println("UserDAO find by name user: " + user);	
-//				return user;
 				User user = new User(
 						result.getInt("user_id"),
 						result.getString("user_name"),
@@ -104,10 +94,7 @@ public class UserDAO implements IUserDAO {
 			ResultSet result = statement.executeQuery();
 			
 			if(result.next()) {
-//				User user = new User();
-//				user.setUserName(result.getString("user_name"));
-//				user.setPassword(result.getString("user_pw"));
-//				user.setUserType(result.getString("user_type"));
+
 				User user = new User(
 						result.getInt("user_id"),
 						result.getString("user_name"),
@@ -127,17 +114,35 @@ public class UserDAO implements IUserDAO {
 
 	
 	@Override
-	public boolean addUser(User user) {
+	public boolean addUser(User user, Customer c) {
 		try(Connection conn = ConnectionUtility.getConnection()){
-			String sql = "INSERT INTO users (user_name, user_pw, user_type) "
-					+ "VALUES (?, ?, ?);";
-			PreparedStatement statement = conn.prepareStatement(sql);			
+//			String sql = "INSERT INTO users (user_name, user_pw, user_type) "
+//					+ "VALUES (?, ?, ?);";
 			
+			
+			String sql = "BEGIN; "
+					+ "INSERT INTO users (user_name, user_pw, user_type)"
+					+ "VALUES (?, ?, ?);"
+					+ "INSERT INTO customers (first_name, middle_name, last_name, address, city, state, zip, phone_number, user_name_fk)"
+					+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);"				
+					+ "COMMIT;";
+			
+			PreparedStatement statement = conn.prepareStatement(sql);
+						
 			int index = 0;
-			//statement.setInt(++index, u.getUserId()); // id is auto incremented for users table
+			//statement.setInt(++index, user.getUserId());
 			statement.setString(++index, user.getUserName());
 			statement.setString(++index, user.getPassword());
 			statement.setString(++index, user.getUserType());
+			statement.setString(++index, c.getFirstName());
+			statement.setString(++index, c.getMiddleName());
+			statement.setString(++index, c.getLastName());
+			statement.setString(++index, c.getAddress());
+			statement.setString(++index, c.getCity());
+			statement.setString(++index, c.getState());
+			statement.setInt(++index, c.getZip());
+			statement.setInt(++index, c.getPhoneNumber());
+			statement.setString(++index, user.getUserName());
 			
 			statement.execute();
 			log.info("UserDAO successfully added new user to DB: " + user);

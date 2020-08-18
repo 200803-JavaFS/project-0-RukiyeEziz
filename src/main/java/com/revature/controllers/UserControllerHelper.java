@@ -1,9 +1,9 @@
-package com.revature.services.helper;
+package com.revature.controllers;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class UserServiceHelper {
+public class UserControllerHelper {
 	
 	private Pattern namePattern;
 	private Pattern pwPattern;
@@ -16,9 +16,9 @@ public class UserServiceHelper {
 	// password must contain at least 3 to at most 15 characters
 	// it allows at least one digit, at least one letter
 	// must not other special characters
-	private static final String PASSWORDREGEX = "(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{3,15})$"; // "^[A-Za-z0-9]{3,15}$"; //
+	private static final String PASSWORDREGEX = "^[A-Za-z0-9]{3,15}$"; //"(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{3,15})$"; // "^[A-Za-z0-9]{3,15}$"; //
 	
-	public UserServiceHelper() {	
+	public UserControllerHelper() {	
 		namePattern = Pattern.compile(USERNAMEREGEX);
 		pwPattern = Pattern.compile(PASSWORDREGEX);
 		

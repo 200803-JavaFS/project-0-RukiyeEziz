@@ -7,16 +7,16 @@ public class Customer implements Serializable{
 	
 	//(customer_id, first_name, middle_name, last_name, 
 	// address, city, state, zip, phone_number, user_name_fk)
-	private int customerId;
+	private int customerId;  // pk
 	private String firstName;
 	private String middleName;
 	private String lastName;	
-	private String userName;
 	private String address;
 	private String city;
 	private String state;
 	private int zip;
 	private int phoneNumber;
+	private User userName;  // user name fk
 	
 	
 	public Customer() {
@@ -33,7 +33,7 @@ public class Customer implements Serializable{
 					String state,
 					int zip,
 					int phoneNumber,
-					String userName) {
+					User userName) {
 		super();
 		this.customerId = customerId;
 		this.firstName = firstName;
@@ -55,7 +55,7 @@ public class Customer implements Serializable{
 					String state, 
 					int zip, 
 					int phoneNumber,
-					String userName) {
+					User userName) {
 		super();
 		this.firstName = firstName;
 		this.middleName = middleName;
@@ -67,6 +67,7 @@ public class Customer implements Serializable{
 		this.phoneNumber = phoneNumber;
 		this.userName= userName;
 	}
+
 	public int getCustomerId() {
 		return customerId;
 	}
@@ -91,10 +92,10 @@ public class Customer implements Serializable{
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public String getUserName() {
+	public User getUserName() {
 		return userName;
 	}
-	public void setUserName(String userName) {
+	public void setUserName(User userName) {
 		this.userName = userName;
 	}
 	public String getAddress() {

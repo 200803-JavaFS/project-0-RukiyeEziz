@@ -39,12 +39,10 @@ public class AccountDAO implements IAccountDAO {
 				account.setInternalMemo(result.getString("internal_memo"));
 				account.setCreatedDateTime(result.getDate("created_date_time"));
 				
-				list.add(account);
-				
+				list.add(account);				
 			}
 			log.info("AccountDAO successfully found all accounts from DB.");
-			return list;
-			
+			return list;		
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -168,16 +166,5 @@ public class AccountDAO implements IAccountDAO {
 		return false;
 	}
 
-//	@Override
-//	public Account transferFunds(int customerid1, int customerid2, long accountid1, long accountid2, double amount) {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
-
-
-
-	
-
-	
 	
 }

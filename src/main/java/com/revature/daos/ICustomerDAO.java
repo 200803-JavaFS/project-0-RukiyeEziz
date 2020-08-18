@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.revature.models.Customer;
+import com.revature.models.User;
 
 public interface ICustomerDAO {
 	
@@ -17,7 +18,7 @@ public interface ICustomerDAO {
 	
 	public boolean updatePhone(int phone, int id);
 	
-	
+	public boolean addUser( Customer c, User user);
 
 
 }

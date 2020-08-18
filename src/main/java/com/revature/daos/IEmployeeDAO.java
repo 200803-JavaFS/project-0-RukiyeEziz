@@ -18,7 +18,7 @@ public interface IEmployeeDAO { //extends ICustomerDAO, IAccountDAO {
 	
 	public List<Account> findAccountByCustomerId(int customerid); // this is find  multiple accounts with single customer
 	
-	public Account findByIds(int customerid, long accountid); // this finds an account tha belong to a customer
+	public Account findAccountByIds(int customerid, long accountid); // this finds an account tha belong to a customer
 	
 	//public Customer findCustomerByCustomerId(int customerid);
 	

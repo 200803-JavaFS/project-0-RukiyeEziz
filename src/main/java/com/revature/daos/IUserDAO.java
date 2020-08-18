@@ -2,6 +2,7 @@ package com.revature.daos;
 
 import java.util.List;
 
+import com.revature.models.Customer;
 import com.revature.models.User;
 
 public interface IUserDAO {
@@ -12,7 +13,8 @@ public interface IUserDAO {
 
 	public User findByNameByPW(String name, String pw);
 	
-	public boolean addUser(User user);
+	public boolean addUser(User user, Customer c);
+	
 	
 	
 	

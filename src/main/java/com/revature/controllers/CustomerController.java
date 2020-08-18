@@ -1,7 +1,5 @@
 package com.revature.controllers;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -14,7 +12,7 @@ public class CustomerController {
 	
 	private static AccountController accountController = new AccountController();
 	private CustomerService customerService = new CustomerService();
-	private static DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); 
+	
 	private static Scanner scan = new Scanner(System.in);
 	
 	public void customerTasks(String username) {
@@ -35,8 +33,7 @@ public class CustomerController {
 //			customerID = c.getCustomerId();
 //		}
 		
-		LocalDateTime currentTime = LocalDateTime.now();
-		System.out.println("Login time: " + timeFormatter.format(currentTime));
+		
 		System.out.println("\nWhat would you like to do? Select one of options and press 'enter':\n\n"
 				+ "[1]\t Manage existing account\n"
 				+ "[2]\t Apply for a new account\n"  // customer should apply joit account
@@ -53,7 +50,11 @@ public class CustomerController {
 				accountController.manageAccount(customerId);
 				break;
 			case "2":
-				createNewAccount(customerId);   //////////////account related
+				System.out.println("Please speak with one of our employee for creating a new account. Thank you.");
+				//createNewAccount(customerId);  
+				System.out.println("Please select one of the following options:");
+				System.out.println("\n**************************************************************\n");
+				customerTasks(username);
 				
 				break;
 			case "3":
@@ -76,8 +77,6 @@ public class CustomerController {
 		
 	}
 	private void editPersonalInfo(int id) {
-		////////////////////////////////////////////////////// To DO: this is return boolean. 
-		           ///////////        if possible return to result, ask one more time if updated info is o with cusomer
 		
 		Customer c = customerService.findCustomerById(id);
 		
