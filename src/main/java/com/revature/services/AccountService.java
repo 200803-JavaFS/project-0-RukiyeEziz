@@ -11,7 +11,7 @@ import com.revature.models.Account;
 
 
 public class AccountService {
-	private static final Logger log = LogManager.getLogger(UserService.class);
+	private static final Logger log = LogManager.getLogger(AccountService.class);
 	private static IAccountDAO accountDao = new AccountDAO();
 	
 	public List<Account> findAll(){
@@ -40,6 +40,22 @@ public class AccountService {
 		log.info("AccountService withdrawing from an account ...");
 		if(accountDao.withdrawAccount(customerid, accountid, amount)) {
 			
+			return true;
+		}
+		return false;
+	}
+	public List<Account> viewAllAccountsBalances() {
+		return accountDao.viewAllAccountsBalances();
+	}
+	
+	public boolean setAccountStatus(Account account) {
+		if(accountDao.setAccountStatus(account)) {
+			return true;
+		}
+		return false;
+	}
+	public boolean AddAccount(Account account) {
+		if(accountDao.AddAccount(account)) {
 			return true;
 		}
 		return false;

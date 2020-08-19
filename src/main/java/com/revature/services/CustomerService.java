@@ -14,21 +14,19 @@ import com.revature.daos.CustomerDAO;
 import com.revature.daos.ICustomerDAO;
 import com.revature.daos.IUserDAO;
 import com.revature.daos.UserDAO;
-import com.revature.models.Account;
 import com.revature.models.Customer;
 import com.revature.models.User;
 
 public class CustomerService {
-	private static final Logger log = LogManager.getLogger(UserService.class);
+	private static final Logger log = LogManager.getLogger(CustomerService.class);
 	private static ICustomerDAO customerDao = new CustomerDAO();
 	private static IUserDAO userDao = new UserDAO();
+	
 	public List<Customer> findAll() {		
 		return customerDao.findAll();
 	}
 
 	public Customer findCustomerByName(String username) {
-		log.info("CustomerService looking for customer by user name ... " + username);
-		log.info("Customer logged in and about to do tasks.");
 		return customerDao.findByName(username);
 	}
 

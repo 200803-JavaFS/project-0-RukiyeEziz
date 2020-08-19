@@ -17,8 +17,11 @@ public interface IAccountDAO {
 	public boolean withdrawAccount(int customerid, long accountid, double amount);
 	
 	//public Account transferFunds(int customerid1, int customerid2, long accountid1, long accountid2, double amount);
+	public List<Account> viewAllAccountsBalances();
 	
+	public boolean setAccountStatus(Account account);
 	
+	public boolean AddAccount(Account account);
 	
 	
 	

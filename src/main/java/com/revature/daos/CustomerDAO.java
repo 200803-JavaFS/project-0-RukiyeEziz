@@ -13,11 +13,10 @@ import org.apache.logging.log4j.Logger;
 
 import com.revature.models.Customer;
 import com.revature.models.User;
-import com.revature.services.UserService;
 import com.revature.utilities.ConnectionUtility;
 
 public class CustomerDAO implements ICustomerDAO {
-	private static final Logger log = LogManager.getLogger(UserService.class);
+	private static final Logger log = LogManager.getLogger(CustomerDAO.class);
 	
 	@Override
 	public List<Customer> findAll() {
@@ -45,11 +44,10 @@ public class CustomerDAO implements ICustomerDAO {
 						
 				list.add(customer);		
 			}
-			log.info("CustomerDAO successfully found all customers from DB."); // + list);
+			log.info("CustomerDAO successfully found all customers from DB."); 
 			return list;
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		log.info("CustomerDAO could not find all customers from DB.");
@@ -116,7 +114,7 @@ public class CustomerDAO implements ICustomerDAO {
 				customer.setPhoneNumber(result.getInt("phone_number"));
 				//customer.setUserName(result.getString("user_name_fk"));
 			
-				log.info("CustomerDAO found customer by name from DB: " + customer);
+				log.info("CustomerDAO found customer by name from DB: " + username);
 				
 				return customer;
 			}
@@ -124,7 +122,7 @@ public class CustomerDAO implements ICustomerDAO {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		log.info("CustomerDAO could not find customer by name from DB.");
+		log.info("CustomerDAO could not find customer by name from DB: " + username);
 		return null;
 	}
 

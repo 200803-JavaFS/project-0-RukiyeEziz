@@ -137,11 +137,11 @@ public class DriverHelper {
 				break;
 			case "2":
 				userType = "employee";
-				createUser(userType, create);
+				//createUser(userType, create);
 				break;
 			case "3":
 				userType = "admin";
-				createUser(userType, create);
+				//createUser(userType, create);
 				break;
 			case "4":
 				System.out.println("Thank you for choosing business with University of Mars Credit Union.");
@@ -170,11 +170,11 @@ public class DriverHelper {
 		
 		// this is just for testing get all users infor
 		// this is stiuation that admin view all user and edit to make chages
-		List<User> userAllList = userService.findAll();
-		System.out.println("All user in DB:");
-		for(User u : userAllList) {
-			System.out.println(u);
-		}
+//		List<User> userAllList = userService.findAll();
+//		System.out.println("All user in DB:");
+//		for(User u : userAllList) {
+//			System.out.println(u);
+//		}
 		
 		
 

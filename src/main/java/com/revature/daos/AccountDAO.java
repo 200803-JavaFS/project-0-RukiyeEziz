@@ -1,6 +1,7 @@
 package com.revature.daos;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -37,7 +38,7 @@ public class AccountDAO implements IAccountDAO {
 				account.setStatus(result.getString("status"));
 				account.setCustomerId(result.getInt("customer_id_fk"));
 				account.setInternalMemo(result.getString("internal_memo"));
-				account.setCreatedDateTime(result.getDate("created_date_time"));
+				account.setCreatedDateTime(result.getString(("created_date_time")));
 				
 				list.add(account);				
 			}
@@ -71,7 +72,7 @@ public class AccountDAO implements IAccountDAO {
 						result.getString("status"),
 						result.getInt("customer_id_fk"),
 						result.getString("internal_memo"),
-						result.getDate("created_date_time"));
+						result.getString("created_date_time"));
 				
 				log.info("AccountDAO found account by customer id from DB: " + account);
 				
@@ -105,7 +106,7 @@ public class AccountDAO implements IAccountDAO {
 				account.setStatus(result.getString("status"));
 				account.setCustomerId(result.getInt("customer_id_fk"));
 				account.setInternalMemo(result.getString("internal_memo"));
-				account.setCreatedDateTime(result.getDate("created_date_time"));
+				account.setCreatedDateTime(result.getString(("created_date_time")));
 				
 				log.info("AccountDAO successfully found the specific one account from DB.");
 				return account;
@@ -165,6 +166,88 @@ public class AccountDAO implements IAccountDAO {
 		log.info("AccountDAO could not deposit to ccount on DB.");	
 		return false;
 	}
+
+	@Override
+	public List<Account> viewAllAccountsBalances() {
+		try(Connection conn = ConnectionUtility.getConnection()){
+			String sql = "SELECT account_id, balance FROM accounts;";
+			
+			Statement statement = conn.createStatement();
+			
+			List<Account> list = new ArrayList<>(); 
+			
+			ResultSet result = statement.executeQuery(sql);
+			
+			while(result.next()) {
+				Account account = new Account();
+				account.setAccountId(result.getLong("account_id"));
+				account.setAccountBalance(result.getDouble("balance"));
+				
+				list.add(account);
+			}	
+			log.info("AccountDAO successfully found the list of accounts balances from DB.");
+			return list;
+				
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		log.info("AccountDAO couldn't find the list of accounts balances from DB.");
+		return null;
+	}
+
+	@Override
+	public boolean setAccountStatus(Account account) {
+		try (Connection conn = ConnectionUtility.getConnection()) {
+			String sql = "UPDATE accounts SET status = ?"
+					+ "WHERE account_id = ?;";
+			
+			PreparedStatement statement = conn.prepareStatement(sql);
+
+			statement.setString(1, account.getStatus());
+			statement.setLong(2, account.getAccountId());
+			
+			statement.execute();
+			
+			log.info("AccountDAO successfully set the status of this account from DB.");
+			return true;
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		log.info("AccountDAO failed to set the status of this account from DB.");
+		return false;
+	}
+
+	@Override
+	public boolean AddAccount(Account account) {
+		try (Connection conn = ConnectionUtility.getConnection()){
+			
+			String sql = "INSERT INTO accounts (account_id, account_name, account_type, balance, status, customer_id_fk, internal_memo, created_date_time)"
+					+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
+			
+			PreparedStatement statement = conn.prepareStatement(sql);
+			
+			int index = 0;
+			statement.setLong(++index, account.getAccountId());
+			statement.setString(++index, account.getAccountName());
+			statement.setString(++index, account.getAccountType());
+			statement.setDouble(++index, account.getAccountBalance());
+			statement.setString(++index, account.getStatus());
+			statement.setLong(++index, account.getCustomerId());
+			statement.setString(++index, account.getInternalMemo());
+			statement.setString(++index, account.getCreatedDateTime());
+			
+			statement.execute();
+			
+			log.info("AccountDAO successfully created this account sent to get approved from DB.");
+			return true;
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		log.info("AccountDAO failed to create this account from DB.");
+		return false;
+	}
+	
 
 	
 }

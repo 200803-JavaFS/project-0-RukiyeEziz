@@ -10,12 +10,12 @@ public class Account implements Serializable{
 	// status, customer_id_fk, internal_memo, created_date_time
 	private Long accountId;
 	private String accountName;
-	private String accountType;
+	private String accountType; // checking , saving
 	private double accountBalance;
 	private String status; 			// approved, denied, pending
 	private int customerId;
 	private String internalMemo; 	// this is for internally used by employee and admin
-	private Date createdDateTime;
+	private String createdDateTime;
 	
 	public Account() {
 		super();
@@ -30,7 +30,7 @@ public class Account implements Serializable{
 			String status,
 			int customerId, 
 			String internalMemo, 
-			Date createdDateTime) {
+			String createdDateTime) {
 		super();
 		this.accountId = accountId;
 		this.accountName = accountName;
@@ -42,7 +42,17 @@ public class Account implements Serializable{
 		this.createdDateTime = createdDateTime;
 	}
 	
-	
+	public Account(String accountName, String accountType, double accountBalance, String status, int customerId,
+			String internalMemo, String createdDateTime) {
+		super();
+		this.accountName = accountName;
+		this.accountType = accountType;
+		this.accountBalance = accountBalance;
+		this.status = status;
+		this.customerId = customerId;
+		this.internalMemo = internalMemo;
+		this.createdDateTime = createdDateTime;
+	}
 
 	public Long getAccountId() {
 		return accountId;
@@ -100,11 +110,11 @@ public class Account implements Serializable{
 		this.internalMemo = internalMemo;
 	}
 
-	public Date getCreatedDateTime() {
+	public String getCreatedDateTime() {
 		return createdDateTime;
 	}
 
-	public void setCreatedDateTime(Date createdDateTime) {
+	public void setCreatedDateTime(String createdDateTime) {
 		this.createdDateTime = createdDateTime;
 	}
 
