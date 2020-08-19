@@ -82,7 +82,6 @@ public class CustomerDAO implements ICustomerDAO {
 				return customer;
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		log.info("CustomerDAO could not find customer by id from DB.");
@@ -115,11 +114,9 @@ public class CustomerDAO implements ICustomerDAO {
 				//customer.setUserName(result.getString("user_name_fk"));
 			
 				log.info("CustomerDAO found customer by name from DB: " + username);
-				
 				return customer;
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		log.info("CustomerDAO could not find customer by name from DB: " + username);
@@ -128,6 +125,7 @@ public class CustomerDAO implements ICustomerDAO {
 
 	@Override
 	public boolean updateAddress(ArrayList<String> list, int id) {
+		
 		System.out.println("got the list at c dao");
 		String address, city, state;
 		address = list.get(0);
@@ -148,7 +146,6 @@ public class CustomerDAO implements ICustomerDAO {
 				return true;
 			
 			} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		log.info("CustomerDAO could not update customer personal info from DB.");
@@ -179,10 +176,7 @@ public class CustomerDAO implements ICustomerDAO {
 	@Override
 	public boolean addUser(Customer c, User user) {
 		try(Connection conn = ConnectionUtility.getConnection()){
-//			String sql = "INSERT INTO users (user_name, user_pw, user_type) "
-//					+ "VALUES (?, ?, ?);";
-			
-			
+
 			String sql = "BEGIN; "
 					+ "INSERT INTO users (user_name, user_pw, user_type)"
 					+ "VALUES (?, ?, ?);"

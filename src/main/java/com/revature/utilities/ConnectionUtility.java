@@ -8,8 +8,7 @@ public class ConnectionUtility {
 	
 	public static Connection getConnection() throws SQLException {
 		
-		// For compatibility with other technology/frameworks will need to register our Driver
-		
+		// For compatibility with other technology/frameworks will need to register our Driver		
 		try {
 			Class.forName("org.postgresql.Driver");		
 		}catch(ClassNotFoundException e){
@@ -37,5 +36,7 @@ public class ConnectionUtility {
 //		}
 //
 //	}
+	
+	
 	
 }

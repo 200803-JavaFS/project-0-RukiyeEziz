@@ -24,15 +24,6 @@ public class CustomerController {
 			customerId = c.getCustomerId();
 		}
 		
-		// this is get then set bkz customer want to edit info
-//		Customer c = customerService.findCustomerById(1);
-//		System.out.println("Your customer ID: " + c.getCustomerId());
-//
-//		if(c.getCustomerId() != 0 ) {
-//			System.out.println("Your customer ID: " + c.getCustomerId() );
-//			customerID = c.getCustomerId();
-//		}
-		
 		
 		System.out.println("\nWhat would you like to do? Select one of options and press 'enter':\n\n"
 				+ "[1]\t Manage existing account\n"
@@ -50,8 +41,7 @@ public class CustomerController {
 				accountController.manageAccount(customerId);
 				break;
 			case "2":
-				System.out.println("Please speak with one of our employee for creating a new account. Thank you.");
-				//createNewAccount(customerId);  
+				System.out.println("Please speak with one of our employee for creating a new account. Thank you.");  
 				System.out.println("Please select one of the following options:");
 				System.out.println("\n**************************************************************\n");
 				customerTasks(username);
@@ -112,7 +102,7 @@ public class CustomerController {
 				
 				System.out.println();
 				System.out.print("Enter valid zip: ");
-				int zip = scan.nextInt();   ///////////////// to do check if integer is valid intteger
+				int zip = scan.nextInt();   
 				
 				info.add(Integer.toString(zip));
 				System.out.println("\nYou entered: " + info + "\n");

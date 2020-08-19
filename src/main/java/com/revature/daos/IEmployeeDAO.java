@@ -6,7 +6,7 @@ import com.revature.models.Account;
 import com.revature.models.Customer;
 import com.revature.models.Employee;
 
-public interface IEmployeeDAO { //extends ICustomerDAO, IAccountDAO {
+public interface IEmployeeDAO { 
 	
 	public List<Customer> findAllCustomers();
 	
@@ -16,9 +16,9 @@ public interface IEmployeeDAO { //extends ICustomerDAO, IAccountDAO {
 	
 	public List<Account> findAccountsWithBalance();
 	
-	public List<Account> findAccountByCustomerId(int customerid); // this is find  multiple accounts with single customer
+	public List<Account> findAccountByCustomerId(int customerid); 
 	
-	public Account findAccountByIds(int customerid, long accountid); // this finds an account tha belong to a customer
+	public Account findAccountByIds(int customerid, long accountid); 
 	
 	public boolean updateAccountStatus(String employeestatus, Account account1);
 	

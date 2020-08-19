@@ -20,8 +20,7 @@ public class EmployeeDAO implements IEmployeeDAO {
 	
 	@Override
 	public List<Customer> findAllCustomers() {
-		return null;
-		
+		return null;	
 	}
 
 	@Override
@@ -49,7 +48,7 @@ public class EmployeeDAO implements IEmployeeDAO {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		log.info("EmployeeDAO could not find all employees from DB.");
+			log.info("EmployeeDAO could not find all employees from DB.");
 			return null;
 		}
 

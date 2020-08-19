@@ -8,18 +8,17 @@ public class Account implements Serializable{
 	
 	// account_id, account_name, account_type, balance, 
 	// status, customer_id_fk, internal_memo, created_date_time
-	private Long accountId;
+	private Long accountId;			//PK
 	private String accountName;
-	private String accountType; // checking , saving
+	private String accountType; 	// checking , saving
 	private double accountBalance;
 	private String status; 			// approved, denied, pending
-	private int customerId;
+	private int customerId;			// FK
 	private String internalMemo; 	// this is for internally used by employee and admin
 	private String createdDateTime;
 	
 	public Account() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Account(

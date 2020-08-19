@@ -45,13 +45,12 @@ public class AccountDAO implements IAccountDAO {
 			log.info("AccountDAO successfully found all accounts from DB.");
 			return list;		
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		log.info("AccountDAO could not find all accounts from DB.");
 		return null;
 	}
-
+	// this finds an account that belong to a customer
 	@Override
 	public List<Account> findById(int id) {
 		try(Connection conn = ConnectionUtility.getConnection()){
@@ -80,7 +79,6 @@ public class AccountDAO implements IAccountDAO {
 			}
 			return list;
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		log.info("CustomerDAO could not find account by customer id from DB.");
@@ -110,11 +108,8 @@ public class AccountDAO implements IAccountDAO {
 				
 				log.info("AccountDAO successfully found the specific one account from DB.");
 				return account;
-			}
-			
-			
+			}			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		log.info("AccountDAO could not find the specific one account from DB.");
@@ -123,6 +118,7 @@ public class AccountDAO implements IAccountDAO {
 
 	@Override
 	public boolean depositAccount(int customerid, long accountid, double amount) {
+		
 		try(Connection conn = ConnectionUtility.getConnection()){
 			String sql = "UPDATE accounts "
 					+ "SET balance = " + amount + " "
@@ -136,7 +132,6 @@ public class AccountDAO implements IAccountDAO {
 				return true;
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 					

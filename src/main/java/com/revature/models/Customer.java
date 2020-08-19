@@ -5,8 +5,8 @@ import java.io.Serializable;
 public class Customer implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	//(customer_id, first_name, middle_name, last_name, 
-	// address, city, state, zip, phone_number, user_name_fk)
+	// customer_id, first_name, middle_name, last_name, 
+	// address, city, state, zip, phone_number, user_name_fk
 	private int customerId;  // pk
 	private String firstName;
 	private String middleName;
@@ -16,12 +16,11 @@ public class Customer implements Serializable{
 	private String state;
 	private int zip;
 	private int phoneNumber;
-	private User userName;  // user name fk
+	private User userName;  // user name FK
 	
 	
 	public Customer() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	// order strictly matter for args/params have to align with DB
 	public Customer(int  customerId,
@@ -199,7 +198,7 @@ public class Customer implements Serializable{
 	@Override
 	public String toString() {
 		return "Customer [customerId=" + customerId + ", firstName=" + firstName + ", middleName=" + middleName
-				+ ", lastName=" + lastName + ", userName=" + userName + ", address=" + address + ", city=" + city
+				+ ", lastName=" + lastName  + ", address=" + address + ", city=" + city
 				+ ", state=" + state + ", zip=" + zip + ", phoneNumber=" + phoneNumber + " ]";
 	}
 	

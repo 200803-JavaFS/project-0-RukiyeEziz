@@ -5,13 +5,13 @@ import java.io.Serializable;
 public class User implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
+	// user_id, user_name, user_pw, user_type
 	private int userId;
-	private String userName;	
+	private String userName;	//PK
 	private String password;
-	private String userType; // client, employee, admin
+	private String userType; 	// client, employee, admin
 	
 	public User() {
-		// TODO Auto-generated constructor stub
 		super();
 	}
 	public User(int id, String username, String userPW, String usertype) {
@@ -69,8 +69,6 @@ public class User implements Serializable{
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-//		result = prime * result + (createAccount ? 1231 : 1237);
-//		result = prime * result + (logInAccount ? 1231 : 1237);
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + userId;
 		result = prime * result + ((userName == null) ? 0 : userName.hashCode());
@@ -87,10 +85,6 @@ public class User implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		User other = (User) obj;
-//		if (createAccount != other.createAccount)
-//			return false;
-//		if (logInAccount != other.logInAccount)
-//			return false;
 		if (password == null) {
 			if (other.password != null)
 				return false;
@@ -116,7 +110,6 @@ public class User implements Serializable{
 		return "User [userId = " + userId + ", userName = " + userName + ", password = " 
 				+ password + ", userType = " + userType + "]";
 		
-		//", logInAccount = " + logInAccount + ", createAccount = " + createAccount + 
 	}
 	
 	

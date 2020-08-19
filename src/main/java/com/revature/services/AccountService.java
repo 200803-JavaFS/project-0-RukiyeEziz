@@ -9,7 +9,6 @@ import com.revature.daos.AccountDAO;
 import com.revature.daos.IAccountDAO;
 import com.revature.models.Account;
 
-
 public class AccountService {
 	private static final Logger log = LogManager.getLogger(AccountService.class);
 	private static IAccountDAO accountDao = new AccountDAO();

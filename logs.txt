@@ -2382,3 +2382,116 @@
 2020-08-18 21:43:13 INFO  UserService:188 - user User [userId = 4, userName = goodemp, password = goodemp, userType = employee]logged in.
 2020-08-18 21:43:13 INFO  EmployeeController:35 - Employee tasks start.
 2020-08-18 21:43:48 INFO  AccountService:242 - AccountDAO successfully created this account from DB.
+2020-08-18 23:09:10 INFO  UserService:36 - Application Started.
+2020-08-18 23:10:52 INFO  UserService:32 - UserService looking for user name and pw ... ruki
+2020-08-18 23:10:53 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-18 23:10:53 INFO  UserService:176 - user User [userId = 1, userName = ruki, password = ruki, userType = client]logged in.
+2020-08-18 23:10:53 INFO  CustomerDAO:116 - CustomerDAO found customer by name from DB: ruki
+2020-08-18 23:13:29 INFO  UserService:32 - UserService looking for user name and pw ... ruki
+2020-08-18 23:13:30 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-18 23:13:30 INFO  UserService:175 - user User [userId = 1, userName = ruki, password = ruki, userType = client]logged in.
+2020-08-18 23:13:30 INFO  CustomerDAO:116 - CustomerDAO found customer by name from DB: ruki
+2020-08-18 23:15:30 INFO  UserDAO:43 - UserDAO successfully found all users from DB.
+2020-08-18 23:18:14 INFO  UserDAO:43 - UserDAO successfully found all users from DB.
+2020-08-18 23:18:21 INFO  UserService:27 - UserService looking for user name ... john
+2020-08-18 23:18:21 INFO  UserDAO:78 - UserDAO could not find user name from DB.
+2020-08-18 23:19:18 INFO  UserDAO:43 - UserDAO successfully found all users from DB.
+2020-08-18 23:19:22 INFO  UserService:27 - UserService looking for user name ... ada
+2020-08-18 23:19:22 INFO  UserDAO:78 - UserDAO could not find user name from DB.
+2020-08-18 23:20:11 INFO  UserService:37 - User Service trying to insert user to DB ... User [userId = 0, userName = ada, password = ada, userType = client]
+2020-08-18 23:20:12 INFO  UserDAO:143 - UserDAO successfully added new user to DB: User [userId = 0, userName = ada, password = ada, userType = client]
+2020-08-18 23:21:00 INFO  UserService:32 - UserService looking for user name and pw ... ada
+2020-08-18 23:21:00 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 8, userName = ada, password = ada, userType = client]
+2020-08-18 23:21:00 INFO  UserService:175 - user User [userId = 8, userName = ada, password = ada, userType = client]logged in.
+2020-08-18 23:21:01 INFO  CustomerDAO:116 - CustomerDAO found customer by name from DB: ada
+2020-08-18 23:21:33 INFO  CustomerDAO:116 - CustomerDAO found customer by name from DB: ada
+2020-08-18 23:22:16 INFO  UserService:32 - UserService looking for user name and pw ... goodemp
+2020-08-18 23:22:17 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 4, userName = goodemp, password = goodemp, userType = employee]
+2020-08-18 23:22:17 INFO  UserService:175 - user User [userId = 4, userName = goodemp, password = goodemp, userType = employee]logged in.
+2020-08-18 23:22:17 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-18 23:22:35 INFO  CustomerDAO:47 - CustomerDAO successfully found all customers from DB.
+2020-08-18 23:22:35 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-18 23:36:03 INFO  UserService:32 - UserService looking for user name and pw ... goodemp
+2020-08-18 23:36:04 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 4, userName = goodemp, password = goodemp, userType = employee]
+2020-08-18 23:36:04 INFO  UserService:175 - user User [userId = 4, userName = goodemp, password = goodemp, userType = employee]logged in.
+2020-08-18 23:36:04 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-18 23:36:07 INFO  CustomerDAO:47 - CustomerDAO successfully found all customers from DB.
+2020-08-18 23:36:07 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-18 23:36:12 INFO  EmployeeDAO:45 - EmployeeDAO successfully found all employees from DB.
+2020-08-18 23:36:12 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-18 23:36:17 INFO  AccountService:45 - AccountDAO successfully found all accounts from DB.
+2020-08-18 23:36:17 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-18 23:36:33 INFO  AccountService:183 - AccountDAO successfully found the list of accounts balances from DB.
+2020-08-18 23:36:33 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-18 23:39:00 INFO  UserDAO:43 - UserDAO successfully found all users from DB.
+2020-08-18 23:39:24 INFO  UserService:27 - UserService looking for user name ... alma
+2020-08-18 23:39:24 INFO  UserDAO:78 - UserDAO could not find user name from DB.
+2020-08-18 23:40:16 INFO  UserDAO:43 - UserDAO successfully found all users from DB.
+2020-08-18 23:40:20 INFO  UserService:27 - UserService looking for user name ... alma
+2020-08-18 23:40:21 INFO  UserDAO:78 - UserDAO could not find user name from DB.
+2020-08-18 23:50:20 INFO  UserDAO:43 - UserDAO successfully found all users from DB.
+2020-08-18 23:50:24 INFO  UserService:27 - UserService looking for user name ... alma
+2020-08-18 23:50:24 INFO  UserDAO:78 - UserDAO could not find user name from DB.
+2020-08-18 23:50:55 INFO  UserService:37 - User Service trying to insert user to DB ... User [userId = 0, userName = alma, password = alma, userType = client]
+2020-08-18 23:50:56 INFO  UserDAO:143 - UserDAO successfully added new user to DB: User [userId = 0, userName = alma, password = alma, userType = client]
+2020-08-18 23:52:12 INFO  UserService:32 - UserService looking for user name and pw ... goodemp
+2020-08-18 23:52:13 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 4, userName = goodemp, password = goodemp, userType = employee]
+2020-08-18 23:52:13 INFO  UserService:175 - user User [userId = 4, userName = goodemp, password = goodemp, userType = employee]logged in.
+2020-08-18 23:52:13 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-18 23:52:17 INFO  CustomerDAO:47 - CustomerDAO successfully found all customers from DB.
+2020-08-18 23:52:17 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-18 23:55:31 INFO  UserDAO:43 - UserDAO successfully found all users from DB.
+2020-08-18 23:55:43 INFO  UserService:27 - UserService looking for user name ... A1
+2020-08-18 23:55:43 INFO  UserDAO:78 - UserDAO could not find user name from DB.
+2020-08-18 23:56:29 INFO  UserService:37 - User Service trying to insert user to DB ... User [userId = 0, userName = A1, password = A1, userType = client]
+2020-08-18 23:56:29 INFO  UserDAO:143 - UserDAO successfully added new user to DB: User [userId = 0, userName = A1, password = A1, userType = client]
+2020-08-18 23:58:25 INFO  UserDAO:43 - UserDAO successfully found all users from DB.
+2020-08-18 23:58:38 INFO  UserService:27 - UserService looking for user name ... A2
+2020-08-18 23:58:38 INFO  UserDAO:78 - UserDAO could not find user name from DB.
+2020-08-18 23:59:13 INFO  UserService:37 - User Service trying to insert user to DB ... User [userId = 0, userName = A2, password = A2, userType = client]
+2020-08-18 23:59:13 INFO  UserDAO:143 - UserDAO successfully added new user to DB: User [userId = 0, userName = A2, password = A2, userType = client]
+2020-08-18 23:59:56 INFO  UserService:32 - UserService looking for user name and pw ... goodemp
+2020-08-18 23:59:57 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 4, userName = goodemp, password = goodemp, userType = employee]
+2020-08-18 23:59:57 INFO  UserService:175 - user User [userId = 4, userName = goodemp, password = goodemp, userType = employee]logged in.
+2020-08-18 23:59:57 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-19 00:00:01 INFO  CustomerDAO:47 - CustomerDAO successfully found all customers from DB.
+2020-08-19 00:00:01 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-19 00:04:19 INFO  UserDAO:43 - UserDAO successfully found all users from DB.
+2020-08-19 00:04:26 INFO  UserService:27 - UserService looking for user name ... A3
+2020-08-19 00:04:27 INFO  UserDAO:78 - UserDAO could not find user name from DB.
+2020-08-19 00:05:02 INFO  UserService:37 - User Service trying to insert user to DB ... User [userId = 0, userName = A3, password = A3, userType = client]
+2020-08-19 00:05:03 INFO  UserDAO:143 - UserDAO successfully added new user to DB: User [userId = 0, userName = A3, password = A3, userType = client]
+2020-08-19 00:05:22 INFO  UserService:32 - UserService looking for user name and pw ... goodemp
+2020-08-19 00:05:23 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 4, userName = goodemp, password = goodemp, userType = employee]
+2020-08-19 00:05:23 INFO  UserService:175 - user User [userId = 4, userName = goodemp, password = goodemp, userType = employee]logged in.
+2020-08-19 00:05:23 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-19 00:05:33 INFO  CustomerDAO:47 - CustomerDAO successfully found all customers from DB.
+2020-08-19 00:06:59 INFO  UserService:32 - UserService looking for user name and pw ... goodemp
+2020-08-19 00:07:00 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 4, userName = goodemp, password = goodemp, userType = employee]
+2020-08-19 00:07:00 INFO  UserService:175 - user User [userId = 4, userName = goodemp, password = goodemp, userType = employee]logged in.
+2020-08-19 00:07:00 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-19 00:07:02 INFO  CustomerDAO:47 - CustomerDAO successfully found all customers from DB.
+2020-08-19 00:07:02 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-19 00:08:52 INFO  UserService:32 - UserService looking for user name and pw ... goodemp
+2020-08-19 00:08:53 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 4, userName = goodemp, password = goodemp, userType = employee]
+2020-08-19 00:08:53 INFO  UserService:175 - user User [userId = 4, userName = goodemp, password = goodemp, userType = employee]logged in.
+2020-08-19 00:08:53 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-19 00:08:55 INFO  CustomerDAO:47 - CustomerDAO successfully found all customers from DB.
+2020-08-19 00:08:55 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-19 00:09:07 INFO  AccountService:45 - AccountDAO successfully found all accounts from DB.
+2020-08-19 00:09:07 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-19 00:10:39 INFO  UserService:32 - UserService looking for user name and pw ... goodemp
+2020-08-19 00:10:40 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 4, userName = goodemp, password = goodemp, userType = employee]
+2020-08-19 00:10:40 INFO  UserService:175 - user User [userId = 4, userName = goodemp, password = goodemp, userType = employee]logged in.
+2020-08-19 00:10:40 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-19 00:10:43 INFO  CustomerDAO:47 - CustomerDAO successfully found all customers from DB.
+2020-08-19 00:10:43 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-19 00:10:54 INFO  AccountService:183 - AccountDAO successfully found the list of accounts balances from DB.
+2020-08-19 00:10:54 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-19 00:11:50 INFO  AccountService:237 - AccountDAO successfully created this account sent to get approved from DB.
+2020-08-19 00:13:23 INFO  UserService:32 - UserService looking for user name and pw ... goodemp
+2020-08-19 00:13:24 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 4, userName = goodemp, password = goodemp, userType = employee]
+2020-08-19 00:13:24 INFO  UserService:175 - user User [userId = 4, userName = goodemp, password = goodemp, userType = employee]logged in.
+2020-08-19 00:13:24 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-19 00:13:30 INFO  AccountService:45 - AccountDAO successfully found all accounts from DB.
+2020-08-19 00:13:30 INFO  EmployeeController:35 - Employee tasks start.

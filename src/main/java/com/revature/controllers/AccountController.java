@@ -12,17 +12,10 @@ import com.revature.services.AccountService;
  *
  */
 public class AccountController {
-	
 	private AccountService accountService = new AccountService();
 	private static Scanner scan = new Scanner(System.in);
+	
 	public void manageAccount(int id) {	
-			
-		// this is for employee or admin view all accounts
-//		List<Account> allAccountList = accountService.findAll();
-//		System.out.println("All accounts in DB:");
-//		for(Account a : allAccountList) {
-//			System.out.println(a);
-//		}
 		
 		// print all account(s) that belong to per customer
 		System.out.println(id);

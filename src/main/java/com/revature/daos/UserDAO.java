@@ -43,7 +43,6 @@ public class UserDAO implements IUserDAO {
 			log.info("UserDAO successfully found all users from DB.");
 			return list;
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}	
 		log.info("UserDAO could not find all users from DB.");
@@ -74,12 +73,12 @@ public class UserDAO implements IUserDAO {
 				return user;
 			}	
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		log.info("UserDAO could not find user name from DB.");
 		return null;
 	}
+	
 	@Override
 	public User findByNameByPW(String name, String pw) {
 		try(Connection conn = ConnectionUtility.getConnection()){
@@ -105,7 +104,6 @@ public class UserDAO implements IUserDAO {
 				return user;
 			}	
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		log.info("UserDAO could not find user name and pw from DB.");
@@ -116,10 +114,7 @@ public class UserDAO implements IUserDAO {
 	@Override
 	public boolean addUser(User user, Customer c) {
 		try(Connection conn = ConnectionUtility.getConnection()){
-//			String sql = "INSERT INTO users (user_name, user_pw, user_type) "
-//					+ "VALUES (?, ?, ?);";
-			
-			
+
 			String sql = "BEGIN; "
 					+ "INSERT INTO users (user_name, user_pw, user_type)"
 					+ "VALUES (?, ?, ?);"

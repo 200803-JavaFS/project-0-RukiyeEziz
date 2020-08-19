@@ -73,20 +73,7 @@ public class EmployeeController {
 			case "3":
 				if(status.equals("employee") || status.equals("admin")) {
 					viewAllAccounts(username, status); 
-//					System.out.println("");
-//					System.out.println("Would you like to continue other banking process again: (yes/no)\n");
-//					String answer = scan.next();
-//					if(answer.equalsIgnoreCase("yes")){
-//						System.out.println();
-//						
-//						beginApp();
-//
-//						viewAccountByAccountCustomerIds(); 
-//						viewAccountsByCustomerId();
-//						
-//					}else {
-//						System.out.println("Thank you. See you next time.");
-//						System.exit(0);
+
 				}else {
 					System.out.println("Unknown status accessing the DB.");
 					log.error("Unknown status accessing accounts data.");
@@ -103,19 +90,18 @@ public class EmployeeController {
 				
 				break;
 			case "5":
+				System.out.println("Under construction ...");
 				//approveDenyAccount();
 				break;
 			case "6":
 				if(status.equals("employee") || status.equals("admin")) {
-					addAccount(username, status);
-					
+					addAccount(username, status);				
 					
 				}else {
 					System.out.println("Unknown status accessing the DB.");
 					log.error("Unknown status accessing accounts data.");
 				}	
-				
-				
+							
 				break;
 			case "7":
 				System.out.println("Under construction ...");

@@ -7,13 +7,12 @@ public class Employee implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	// employee_id, status, user_name_fk
-	private int employeeId;
-	private String employeeStatus; //employee, admin
-	private String employeeUserName;
+	private int employeeId;				//PK
+	private String employeeStatus; 		//employee, admin
+	private String employeeUserName;	// FK
 	
 	public Employee() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Employee(int employeeId, String employeeStatus, String employeeUserName) {

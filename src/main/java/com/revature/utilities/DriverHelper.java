@@ -17,8 +17,6 @@ import com.revature.services.CustomerService;
 import com.revature.services.UserService;
 
 
-
-
 public class DriverHelper {
 	private static final Logger log = LogManager.getLogger(UserService.class);
 	private static UserService userService = new UserService();
@@ -86,7 +84,6 @@ public class DriverHelper {
 						+ "[4]\t Close the Application");
 		System.out.println("\n**************************************************************\n");
 		String option = scan.next();
-		System.out.println("option "+option);
 		System.out.println();
 		logIn = true;
 		
@@ -166,17 +163,7 @@ public class DriverHelper {
 		System.out.println();
 		userType = usertype;		
 		logIn = login;
-		
-		
-		// this is just for testing get all users infor
-		// this is stiuation that admin view all user and edit to make chages
-//		List<User> userAllList = userService.findAll();
-//		System.out.println("All user in DB:");
-//		for(User u : userAllList) {
-//			System.out.println(u);
-//		}
-		
-		
+
 
 		User userNameDB = userService.findUserByNameByPW(userName, userPassword);
 
@@ -184,9 +171,9 @@ public class DriverHelper {
 			LocalDateTime currentTime = LocalDateTime.now();
 			System.out.println("Login time: " + timeFormatter.format(currentTime) + "\n");
 			
-			System.out.println("Welcome " + userName + ". You have succefully logged in.");	
+			System.out.println("Welcome " + userName + ". You have succefully logged in.\n");	
 			log.info("user " + userNameDB + "logged in." );
-			//System.out.println(userName + " " + userPassword + " " + userType);
+			
 			System.out.println("**************************************************************");
 			switch(userType) {
 				case "client":
@@ -211,23 +198,21 @@ public class DriverHelper {
 		}
 		
 		System.out.println("\n**************************************************************\n");		
-
 	}
-
 
 	// request info from new user
 	private void createUser(String usertype, boolean created) {
 		
 		List<User> userAllList = userService.findAll();
-		System.out.println("All user in DB:");
-		for(User u : userAllList) {
-			System.out.println(u);
-		}
+//		System.out.println("All user in DB:");
+//		for(User u : userAllList) {
+//			System.out.println(u);
+//		}
 
 		System.out.println("Welcome New User");
 		System.out.println("Enter your user name and password:\n");
 		System.out.print("User Name: ");
-		String userName = scan.next();		////// TO DO: userName restriction
+		String userName = scan.next();		
 		
 		User user = userService.findUserByName(userName);
 		//System.out.println(user.getUserName());
@@ -261,31 +246,44 @@ public class DriverHelper {
 		System.out.println();
 		userType = usertype;		
 		create = created;
-		//System.out.println(userName + " " + userPassword1 + " " +  userPassword2 + " " +  userType + " create " +  create);
-		//User newUser = new User(userName, userPassword1, userType);
+
 		System.out.println();
 		
 		System.out.println("Please fill out other information: \n");
+		System.out.println("------------------------------------");
 		System.out.println("\nFirst Name: ");
-		String fname = scan.nextLine();
 		scan.nextLine();
+		String fname = scan.nextLine();
+		
+		
 		System.out.println("\nMiddle Name: ");
 		String mname = scan.nextLine();
+		
 		System.out.println("\nLast Name: ");
 		String lname = scan.nextLine();
+		
 		System.out.println("\nAddress: ");
 		String address= scan.nextLine();
+		
 		System.out.println("\nCity: ");
 		String city = scan.nextLine();
+		
 		System.out.println("\nState: ");
 		String state = scan.nextLine();
+		
 		System.out.println("\nZip: ");
 		int zip = scan.nextInt();
+		
 		System.out.println("\nPhone Number: ");
 		int phone = scan.nextInt();
-
-		Customer newCustomer = new Customer(fname, mname, lname, address, city, state, zip, phone, null);
+		
+		System.out.println(fname + " " + mname +  lname +  address +  city +  state +  zip + phone+ userName);
+		
 		User newUser = new User(userName, userPassword1, userType);
+		
+		System.out.println("first " + fname);
+		Customer newCustomer = new Customer(fname, mname, lname, address, city, state, zip, phone, null);
+		
 		newCustomer.setUserName(newUser);
 		
 		if(userService.insertUser(newUser, newCustomer)) {
@@ -307,8 +305,7 @@ public class DriverHelper {
 			beginApp();				
 		}
 		
-		
-		
+			
 		boolean newUserCreated = userService.insertUser(newUser, newCustomer);
 		if(!newUserCreated) {
 			System.out.println("Something went wrong. Please try again.");
