@@ -2545,3 +2545,8 @@
 2020-08-19 08:34:40 INFO  AccountService:109 - AccountDAO successfully found the specific one account from DB.
 2020-08-19 08:34:40 INFO  AccountService:26 - AccountService looking for an account by customer id ... 1 and account id 2
 2020-08-19 08:34:40 INFO  AccountService:109 - AccountDAO successfully found the specific one account from DB.
+2020-08-19 09:02:34 INFO  UserService:32 - UserService looking for user name and pw ... ruki
+2020-08-19 09:02:35 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-19 09:02:35 INFO  UserService:175 - user User [userId = 1, userName = ruki, password = ruki, userType = client]logged in.
+2020-08-19 09:02:35 INFO  CustomerDAO:116 - CustomerDAO found customer by name from DB: ruki
+2020-08-19 09:02:40 INFO  CustomerDAO:116 - CustomerDAO found customer by name from DB: ruki

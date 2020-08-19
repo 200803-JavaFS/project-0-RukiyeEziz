@@ -21,7 +21,7 @@ public class CustomerController {
 
 		int customerId = 0;
 		if(c != null ) {
-			System.out.println("Your customer User Name: " + c.getUserName());
+			System.out.println("Your customer User Name: " + username);
 			System.out.println("Your customer ID: " + c.getCustomerId() );
 			customerId = c.getCustomerId();
 		}
