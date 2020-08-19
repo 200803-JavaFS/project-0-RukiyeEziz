@@ -16,15 +16,16 @@ public class CustomerController {
 	private static Scanner scan = new Scanner(System.in);
 	
 	public void customerTasks(String username) {
+		
 		Customer c = customerService.findCustomerByName(username);	
+
 		int customerId = 0;
-		if(c.getUserName() != null ) {
+		if(c != null ) {
 			System.out.println("Your customer User Name: " + c.getUserName());
 			System.out.println("Your customer ID: " + c.getCustomerId() );
 			customerId = c.getCustomerId();
 		}
-		
-		
+
 		System.out.println("\nWhat would you like to do? Select one of options and press 'enter':\n\n"
 				+ "[1]\t Manage existing account\n"
 				+ "[2]\t Apply for a new account\n"  // customer should apply joit account

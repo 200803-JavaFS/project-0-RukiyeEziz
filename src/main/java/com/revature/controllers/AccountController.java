@@ -16,7 +16,7 @@ public class AccountController {
 	private static Scanner scan = new Scanner(System.in);
 	
 	public void manageAccount(int id) {	
-		
+		System.out.println(id+"account");
 		// print all account(s) that belong to per customer
 		System.out.println(id);
 		int customerId = id;

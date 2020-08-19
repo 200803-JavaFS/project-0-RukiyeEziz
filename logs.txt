@@ -2495,3 +2495,53 @@
 2020-08-19 00:13:24 INFO  EmployeeController:35 - Employee tasks start.
 2020-08-19 00:13:30 INFO  AccountService:45 - AccountDAO successfully found all accounts from DB.
 2020-08-19 00:13:30 INFO  EmployeeController:35 - Employee tasks start.
+2020-08-19 08:17:23 INFO  UserService:32 - UserService looking for user name and pw ... ruki
+2020-08-19 08:17:24 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-19 08:17:24 INFO  UserService:175 - user User [userId = 1, userName = ruki, password = ruki, userType = client]logged in.
+2020-08-19 08:17:25 INFO  CustomerDAO:116 - CustomerDAO found customer by name from DB: ruki
+2020-08-19 08:17:30 INFO  AccountService:21 - AccountService looking for account by customer id ... 0
+2020-08-19 08:23:55 INFO  UserService:32 - UserService looking for user name and pw ... ruki
+2020-08-19 08:23:56 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-19 08:23:56 INFO  UserService:175 - user User [userId = 1, userName = ruki, password = ruki, userType = client]logged in.
+2020-08-19 08:23:56 INFO  CustomerDAO:116 - CustomerDAO found customer by name from DB: ruki
+2020-08-19 08:23:58 INFO  AccountService:21 - AccountService looking for account by customer id ... 0
+2020-08-19 08:26:08 INFO  UserService:32 - UserService looking for user name and pw ... ruki
+2020-08-19 08:26:09 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-19 08:26:10 INFO  UserService:175 - user User [userId = 1, userName = ruki, password = ruki, userType = client]logged in.
+2020-08-19 08:26:10 INFO  CustomerDAO:116 - CustomerDAO found customer by name from DB: ruki
+2020-08-19 08:26:13 INFO  AccountService:21 - AccountService looking for account by customer id ... 0
+2020-08-19 08:27:21 INFO  UserService:32 - UserService looking for user name and pw ... ruki
+2020-08-19 08:27:22 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-19 08:27:22 INFO  UserService:175 - user User [userId = 1, userName = ruki, password = ruki, userType = client]logged in.
+2020-08-19 08:27:23 INFO  CustomerDAO:116 - CustomerDAO found customer by name from DB: ruki
+2020-08-19 08:27:36 INFO  AccountService:21 - AccountService looking for account by customer id ... 0
+2020-08-19 08:29:10 INFO  UserService:32 - UserService looking for user name and pw ... ruki
+2020-08-19 08:29:11 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-19 08:29:11 INFO  UserService:175 - user User [userId = 1, userName = ruki, password = ruki, userType = client]logged in.
+2020-08-19 08:29:11 INFO  CustomerDAO:116 - CustomerDAO found customer by name from DB: ruki
+2020-08-19 08:30:50 INFO  UserService:32 - UserService looking for user name and pw ... ruki
+2020-08-19 08:30:51 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-19 08:30:51 INFO  UserService:175 - user User [userId = 1, userName = ruki, password = ruki, userType = client]logged in.
+2020-08-19 08:30:52 INFO  CustomerDAO:116 - CustomerDAO found customer by name from DB: ruki
+2020-08-19 08:31:52 INFO  UserService:32 - UserService looking for user name and pw ... ruki
+2020-08-19 08:31:53 INFO  UserDAO:103 - UserDAO found user and pw info from DB: User [userId = 1, userName = ruki, password = ruki, userType = client]
+2020-08-19 08:31:53 INFO  UserService:175 - user User [userId = 1, userName = ruki, password = ruki, userType = client]logged in.
+2020-08-19 08:31:54 INFO  CustomerDAO:116 - CustomerDAO found customer by name from DB: ruki
+2020-08-19 08:32:05 INFO  AccountService:21 - AccountService looking for account by customer id ... 1
+2020-08-19 08:32:05 INFO  AccountService:76 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=5000.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-18]
+2020-08-19 08:32:05 INFO  AccountService:76 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=300.0, status=approved, customerId=1, internalMemo=just approved, createdDateTime=2020-08-18]
+2020-08-19 08:33:02 INFO  AccountService:39 - AccountService withdrawing from an account ...
+2020-08-19 08:33:02 INFO  AccountService:152 - AccountDAO found account by customer id from DB: 
+2020-08-19 08:33:02 INFO  AccountService:26 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-19 08:33:02 INFO  AccountService:109 - AccountDAO successfully found the specific one account from DB.
+2020-08-19 08:33:14 INFO  AccountService:21 - AccountService looking for account by customer id ... 1
+2020-08-19 08:33:14 INFO  AccountService:76 - AccountDAO found account by customer id from DB: Account [accountId=2, accountName=trip, accountType=checking, accountBalance=300.0, status=approved, customerId=1, internalMemo=just approved, createdDateTime=2020-08-18]
+2020-08-19 08:33:14 INFO  AccountService:76 - AccountDAO found account by customer id from DB: Account [accountId=1, accountName=my saving, accountType=saving, accountBalance=4500.0, status=approved, customerId=1, internalMemo=, createdDateTime=2020-08-18]
+2020-08-19 08:34:39 INFO  AccountService:39 - AccountService withdrawing from an account ...
+2020-08-19 08:34:39 INFO  AccountService:152 - AccountDAO found account by customer id from DB: 
+2020-08-19 08:34:39 INFO  AccountService:31 - AccountService depositing to an account ...
+2020-08-19 08:34:39 INFO  AccountService:130 - AccountDAO found account by customer id from DB: 
+2020-08-19 08:34:39 INFO  AccountService:26 - AccountService looking for an account by customer id ... 1 and account id 1
+2020-08-19 08:34:40 INFO  AccountService:109 - AccountDAO successfully found the specific one account from DB.
+2020-08-19 08:34:40 INFO  AccountService:26 - AccountService looking for an account by customer id ... 1 and account id 2
+2020-08-19 08:34:40 INFO  AccountService:109 - AccountDAO successfully found the specific one account from DB.
