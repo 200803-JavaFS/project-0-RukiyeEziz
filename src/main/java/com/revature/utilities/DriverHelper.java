@@ -277,7 +277,7 @@ public class DriverHelper {
 		System.out.println("\nPhone Number: ");
 		int phone = scan.nextInt();
 		
-		System.out.println(fname + " " + mname +  lname +  address +  city +  state +  zip + phone+ userName);
+		//System.out.println(fname + " " + mname +  lname +  address +  city +  state +  zip + phone+ userName);
 		
 		User newUser = new User(userName, userPassword1, userType);
 		
